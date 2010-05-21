@@ -1,0 +1,28 @@
+<dl class="portlet portletArchivePortlet"
+    i18n:domain="collective.blog.archive">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <i18n:block translate="">Archive</i18n:block>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem odd">
+        <tal:block repeat="year view/years">
+        <strong class="archive-year" tal:content="year">1970</strong>
+        <ul>
+            <li tal:repeat="month python:view.months(year)">
+                <span class="archive-month"
+                    tal:content="string:month_${month}"
+                    i18n:translate="">
+                    January
+                </span>
+                <span class="archive-count">
+                    (<tal:block content="python:view.count(year, month)">0</tal:block>)
+                </span>
+            </li>
+        </ul>
+        </tal:block>
+    </dd>
+
+</dl>
