@@ -12,14 +12,16 @@
         <strong class="archive-year" tal:content="year">1970</strong>
         <ul>
             <li tal:repeat="month python:view.months(year)">
-                <span class="archive-month"
-                    tal:content="string:month_${month}"
-                    i18n:translate="">
-                    January
-                </span>
-                <span class="archive-count">
-                    (<tal:block content="python:view.count(year, month)">0</tal:block>)
-                </span>
+                <a tal:attributes="href python:view.archive_url(year, month)">
+                    <span class="archive-month"
+                        tal:content="string:month_${month}"
+                        i18n:translate="">
+                        January
+                    </span>
+                    <span class="archive-count">
+                        (<tal:block content="python:view.count(year, month)">0</tal:block>)
+                    </span>
+                </a>
             </li>
         </ul>
         </tal:block>

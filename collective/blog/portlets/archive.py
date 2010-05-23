@@ -7,9 +7,11 @@ from Products.CMFCore.utils import getToolByName
 from plone.portlets.interfaces import IPortletAssignmentMapping
 from plone.portlets.interfaces import IPortletManager
 
+from zope import schema
 from zope.formlib import form
 
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from collective.blog.portlets import _
 
 def find_assignment_context(assignment, context):
     # Finds the creation context of the assignment
@@ -37,6 +39,12 @@ class IArchivePortlet(IPortletDataProvider):
     data that is being rendered and the portlet assignment itself are the
     same.
     """
+    
+    archive_view = schema.TextLine(title=_(u"Archive View"),
+                                   description=_(u"The name of the archive view"),
+                                   default=u'blog_view',
+                                   required=True)
+    
 
 class Assignment(base.Assignment):
     """Portlet assignment.
@@ -47,15 +55,17 @@ class Assignment(base.Assignment):
 
     implements(IArchivePortlet)
 
-    def __init__(self):
-        pass
+    archive_view = u'blog_view'
+
+    def __init__(self, archive_view=u'blog_view'):
+        self.archive_view = archive_view
 
     @property
     def title(self):
         """This property is used to give the title of the portlet in the
         "manage portlets" screen.
         """
-        return "Archive Portlet"
+        return "Monthly archive Portlet"
 
 
 class Renderer(base.Renderer):
@@ -73,12 +83,12 @@ class Renderer(base.Renderer):
         catalog = getToolByName(self.context, 'portal_catalog')
         # Get the path of where the portlet is created. That's the blog.
         assignment_context = find_assignment_context(self.data, self.context)
-        path = '/'.join(assignment_context.getPhysicalPath())
+        self.folder_path = '/'.join(assignment_context.getPhysicalPath())
         # Because of ExtendedPathIndex being braindead it's tricky (read:
         # impossible) to get all subobjects for all folder, without also
         # getting the folder. So we set depth to 1, which means we only get
         # the immediate children. This is not a bug, but a lack of feature.
-        brains = catalog(path={'query': path, 'depth': 1})
+        brains = catalog(path={'query': self.folder_path, 'depth': 1})
         if not brains:
             return
         
@@ -110,10 +120,30 @@ class Renderer(base.Renderer):
     
     def count(self, year, month):
         return self._counts[year][month]
-
     
-class AddForm(base.NullAddForm):
+    def archive_url(self, year, month):
+        return '%s/%s?year=%s&month=%s' % (self.folder_path,
+                                           self.data.archive_view,
+                                           year, month)
+
+
+class AddForm(base.AddForm):
     """Portlet add form.
+
+    This is registered in configure.zcml. The form_fields variable tells
+    zope.formlib which fields to display. The create() method actually
+    constructs the assignment that is being added.
     """
-    def create(self):
-        return Assignment()
+    form_fields = form.Fields(IArchivePortlet)
+
+    def create(self, data):
+        return Assignment(**data)
+    
+    
+class EditForm(base.EditForm):
+    """Portlet edit form.
+
+    This is registered with configure.zcml. The form_fields variable tells
+    zope.formlib which fields to display.
+    """
+    form_fields = form.Fields(IArchivePortlet)

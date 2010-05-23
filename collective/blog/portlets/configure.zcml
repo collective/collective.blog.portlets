@@ -25,6 +25,7 @@
     edit_permission="cmf.ManagePortal"
     renderer=".archive.Renderer"
     addview=".archive.AddForm"
+    editview=".archive.EditForm"
     />
 
 </configure>

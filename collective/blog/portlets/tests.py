@@ -53,6 +53,7 @@ class FunctionalTestCase(ptc.FunctionalTestCase, TestCase):
         admin.getLink('Manage portlets').click()
         self.assert_('Monthly archive portlet' in admin.contents)
         admin.open(blog_url + '/++contextportlets++plone.rightcolumn/+/collective.blog.portlets.archive')
+        admin.getControl(name='form.actions.save').click()
         
         # In the folder, create content with a varying set of publishing dates.
         dates = [datetime(2008, 2, 29, 8, 0), datetime(2008, 5, 7, 00, 0),
@@ -84,6 +85,9 @@ class FunctionalTestCase(ptc.FunctionalTestCase, TestCase):
         # The test of the portlet content is ugly. Maybe it could be made
         # prettier by looking at the code as XML...
         pos = portlet.find('2008')
+        self.assert_(pos != -1)
+        # Check that the links are ok:
+        pos = portlet.find('blog_view?year=2008&amp;month=2', pos)
         self.assert_(pos != -1)
         pos = portlet.find('month_2', pos)
         self.assert_(pos != -1)
