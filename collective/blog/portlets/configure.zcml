@@ -9,7 +9,7 @@
   
   <genericsetup:registerProfile
     name="default"
-    title="Archive Portlet"
+    title="collective.blog.portlets"
     directory="profiles/default"
     description=""
     provides="Products.GenericSetup.interfaces.EXTENSION"
@@ -18,13 +18,13 @@
   <!-- Register the portlet -->
 
   <plone:portlet
-    name="collective.blog.portlets.portlet"
-    interface=".portlet.IArchivePortlet"
-    assignment=".portlet.Assignment"
+    name="collective.blog.portlets.archive"
+    interface=".archive.IArchivePortlet"
+    assignment=".archive.Assignment"
     view_permission="zope2.View"
     edit_permission="cmf.ManagePortal"
-    renderer=".portlet.Renderer"
-    addview=".portlet.AddForm"
+    renderer=".archive.Renderer"
+    addview=".archive.AddForm"
     />
 
 </configure>

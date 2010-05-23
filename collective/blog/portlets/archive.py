@@ -66,7 +66,7 @@ class Renderer(base.Renderer):
     of this class. Other methods can be added and referenced in the template.
     """
 
-    render = ViewPageTemplateFile('portlet.pt')
+    render = ViewPageTemplateFile('archive.pt')
     
     def update(self):
         self._counts = {}
