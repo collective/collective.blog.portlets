@@ -3,7 +3,7 @@
   xmlns:five="http://namespaces.zope.org/five"
   xmlns:plone="http://namespaces.plone.org/plone"
   xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
-  i18n_domain="collective.blog.archive">
+  i18n_domain="collective.blog.portlets">
 
   <five:registerPackage package="." initialize=".initialize" />
   
@@ -18,7 +18,7 @@
   <!-- Register the portlet -->
 
   <plone:portlet
-    name="collective.blog.archive.portlet"
+    name="collective.blog.portlets.portlet"
     interface=".portlet.IArchivePortlet"
     assignment=".portlet.Assignment"
     view_permission="zope2.View"

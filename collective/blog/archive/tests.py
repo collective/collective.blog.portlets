@@ -11,9 +11,9 @@ from Products.Five import fiveconfigure
 from Products.Five import testbrowser
 from Products.PloneTestCase import PloneTestCase as ptc
 from Products.PloneTestCase.layer import PloneSite
-ptc.setupPloneSite(products=['collective.blog.archive'])
+ptc.setupPloneSite(products=['collective.blog.portlets'])
 
-import collective.blog.archive
+import collective.blog.portlets
 
 class TestCase(ptc.PloneTestCase):
     class layer(PloneSite):
@@ -21,7 +21,7 @@ class TestCase(ptc.PloneTestCase):
         def setUp(cls):
             fiveconfigure.debug_mode = True
             zcml.load_config('configure.zcml',
-                             collective.blog.archive)
+                             collective.blog.portlets)
             fiveconfigure.debug_mode = False
 
         @classmethod
@@ -52,7 +52,7 @@ class FunctionalTestCase(ptc.FunctionalTestCase, TestCase):
         # Add the portlet:
         admin.getLink('Manage portlets').click()
         self.assert_('Monthly archive portlet' in admin.contents)
-        admin.open(blog_url + '/++contextportlets++plone.rightcolumn/+/collective.blog.archive.portlet')
+        admin.open(blog_url + '/++contextportlets++plone.rightcolumn/+/collective.blog.portlets.portlet')
         
         # In the folder, create content with a varying set of publishing dates.
         dates = [datetime(2008, 2, 29, 8, 0), datetime(2008, 5, 7, 00, 0),

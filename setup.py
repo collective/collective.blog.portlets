@@ -3,7 +3,7 @@ import os
 
 version = '1.0'
 
-setup(name='collective.blog.archive',
+setup(name='collective.blog.portlets',
       version=version,
       description="Archive view and portlet",
       long_description=open("README.txt").read() + "\n" +
@@ -13,7 +13,7 @@ setup(name='collective.blog.archive',
         "Framework :: Plone",
         "Programming Language :: Python",
         ],
-      keywords='plone blog archive',
+      keywords='plone blog portlet archive',
       author='Jarn AS',
       author_email='info@jarn.com',
       url='http://svn.plone.org/svn/collective/',

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <portlets>
   <portlet
-    addview="collective.blog.archive.portlet"
+    addview="collective.blog.portlets.portlet"
     title="Monthly archive portlet"
     description="A blog style archive portlet"
     />

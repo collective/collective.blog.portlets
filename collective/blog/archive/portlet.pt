@@ -1,5 +1,5 @@
 <dl class="portlet portletArchivePortlet"
-    i18n:domain="collective.blog.archive">
+    i18n:domain="collective.blog.portlets">
 
     <dt class="portletHeader">
         <span class="portletTopLeft"></span>
