@@ -27,5 +27,16 @@
     addview=".archive.AddForm"
     editview=".archive.EditForm"
     />
+    
+  <plone:portlet
+    name="collective.blog.portlets.last_entries"
+    interface=".last_entries.ILastEntriesPortlet"
+    assignment=".last_entries.Assignment"
+    view_permission="zope2.View"
+    edit_permission="cmf.ManagePortal"
+    renderer=".last_entries.Renderer"
+    addview=".last_entries.AddForm"
+    editview=".last_entries.EditForm"
+    />
 
 </configure>

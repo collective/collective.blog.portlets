@@ -5,4 +5,9 @@
     title="Monthly archive"
     description="A blog style archive portlet"
     />
+  <portlet
+    addview="collective.blog.portlets.last_entries"
+    title="Last entries"
+    description="A blog style last entries portlet"
+    />
 </portlets>

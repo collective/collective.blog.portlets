@@ -32,6 +32,20 @@ msgstr ""
 msgid "Monthly archive"
 msgstr ""
 
+msgid "Last entries"
+msgstr ""
+
+msgid "Entries"
+msgstr ""
+
+msgid "The number of entries to show"
+msgstr ""
+
+entries = schema.Int(title=_(u""),
+                         description=_(u""),
+                         default=5,
+                         required=True)
+
 msgid "month_1"
 msgstr ""
 

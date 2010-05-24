@@ -1,0 +1,23 @@
+<dl class="portlet portletLastEntryPortlet"
+    i18n:domain="collective.blog.portlets">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <i18n:block translate="">Last entries</i18n:block>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <tal:block define="plone_view context/@@plone;"
+        repeat="item view/items">
+        <dd tal:define="oddrow repeat/item/odd"
+            tal:attributes="class python:oddrow and  'portletItem even' or 'portletItem odd'">
+            <a tal:attributes="href item/getURL">
+                <tal:block replace="item/pretty_title_or_id" />
+                <span class="portletItemDetails"
+                      tal:content="python:plone_view.toLocalizedTime(item.ModificationDate)"
+                      >23.05.2010</span>
+            </a>
+        </dd>
+    </tal:block>
+</dl>
+        

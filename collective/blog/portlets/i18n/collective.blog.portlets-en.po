@@ -32,6 +32,15 @@ msgstr "The name of the archive view"
 msgid "Monthly archive"
 msgstr "Monthly archive"
 
+msgid "Last entries"
+msgstr "Last entries"
+
+msgid "Entries"
+msgstr "Entries"
+
+msgid "The number of entries to show"
+msgstr "The number of entries to show"
+
 msgid "month_1"
 msgstr "January"
 

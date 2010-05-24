@@ -32,6 +32,15 @@ msgstr "Navnet på arkivvisningen"
 msgid "Monthly archive"
 msgstr "Månedlig arkiv"
 
+msgid "Last entries"
+msgstr "Siste oppføringer"
+
+msgid "Entries"
+msgstr "Oppføringer"
+
+msgid "The number of entries to show"
+msgstr "Antall oppføringer å vise"
+
 msgid "month_1"
 msgstr "Januar"
 
