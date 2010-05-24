@@ -10,5 +10,10 @@ for other situtations. The portlets so far is:
   
 * Eh... That's it, so far. :)
 
+
+Installation is done in the usual manner: Add collective.blog.portlets to your
+buildout, and install through QuickInstaller or portal_setup.
+
+
 The development of collective.blog.portlets was sponsored by 
 Bergen Offentlige Bibliotek, http://bergenbibliotek.no/
