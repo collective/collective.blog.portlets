@@ -1,36 +1,16 @@
 from zope.interface import implements
-from zope.component import getUtility, getMultiAdapter, ComponentLookupError
 
 from plone.portlets.interfaces import IPortletDataProvider
 from plone.app.portlets.portlets import base
 from Products.CMFCore.utils import getToolByName
-from plone.portlets.interfaces import IPortletAssignmentMapping
-from plone.portlets.interfaces import IPortletManager
 
 from zope import schema
 from zope.formlib import form
 
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from collective.blog.portlets.utils import find_assignment_context
 from collective.blog.portlets import _
 
-def find_assignment_context(assignment, context):
-    # Finds the creation context of the assignment
-    context = context.aq_inner
-    manager_name = assignment.manager.__name__
-    assignment_name = assignment.__name__
-    while True:
-        try:
-            manager = getUtility(IPortletManager, manager_name, context=context)
-            mapping = getMultiAdapter((context, manager), IPortletAssignmentMapping)
-            if assignment_name in mapping:
-                if mapping[assignment_name] is assignment.aq_base:
-                    return context
-        except ComponentLookupError:
-            pass
-        parent = context.aq_parent
-        if parent is context:
-            return None
-        context = parent
 
 class IArchivePortlet(IPortletDataProvider):
     """A portlet
