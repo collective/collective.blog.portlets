@@ -2,7 +2,7 @@
 <portlets>
   <portlet
     addview="collective.blog.portlets.archive"
-    title="Monthly archive portlet"
+    title="Monthly archive"
     description="A blog style archive portlet"
     />
 </portlets>

@@ -51,7 +51,7 @@ class FunctionalTestCase(ptc.FunctionalTestCase, TestCase):
         
         # Add the portlet:
         admin.getLink('Manage portlets').click()
-        self.assert_('Monthly archive portlet' in admin.contents)
+        self.assert_('Monthly archive' in admin.contents)
         admin.open(blog_url + '/++contextportlets++plone.rightcolumn/+/collective.blog.portlets.archive')
         admin.getControl(name='form.actions.save').click()
         

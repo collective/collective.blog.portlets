@@ -40,7 +40,7 @@ class IArchivePortlet(IPortletDataProvider):
     same.
     """
     
-    archive_view = schema.TextLine(title=_(u"Archive View"),
+    archive_view = schema.TextLine(title=_(u"Archive view"),
                                    description=_(u"The name of the archive view"),
                                    default=u'blog_view',
                                    required=True)
@@ -65,7 +65,7 @@ class Assignment(base.Assignment):
         """This property is used to give the title of the portlet in the
         "manage portlets" screen.
         """
-        return "Monthly archive Portlet"
+        return _("Monthly archive")
 
 
 class Renderer(base.Renderer):
