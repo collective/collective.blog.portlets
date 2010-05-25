@@ -11,7 +11,7 @@
         repeat="item view/items">
         <dd tal:define="oddrow repeat/item/odd"
             tal:attributes="class python:oddrow and  'portletItem even' or 'portletItem odd'">
-            <a tal:attributes="href item/getURL">
+            <a tal:attributes="href python:view.item_url(item)">
                 <tal:block replace="item/pretty_title_or_id" />
                 <span class="portletItemDetails"
                       tal:content="python:plone_view.toLocalizedTime(item.ModificationDate)"
@@ -20,4 +20,3 @@
         </dd>
     </tal:block>
 </dl>
-        

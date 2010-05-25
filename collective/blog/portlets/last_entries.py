@@ -70,6 +70,15 @@ class Renderer(base.Renderer):
                          sort_on='effective', sort_order='reverse')
         return brains[:self.data.entries]
         
+    def item_url(self, item):
+        portal_properties = getToolByName(self.context, 'portal_properties')
+        site_properties = getattr(portal_properties, 'site_properties')
+        use_view = site_properties.getProperty('typesUseViewActionInListings')
+        url = item.getURL()
+        if item.portal_type in use_view:
+            return '%s/view' % url
+        return url
+
 
 class AddForm(base.AddForm):
     """Portlet add form.
