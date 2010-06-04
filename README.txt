@@ -4,8 +4,8 @@ Introduction
 This product contains a set of portlets aimed at blogging, but useable also
 for other situtations.
 
-The development of collective.blog.portlets was sponsored by 
-Bergen Offentlige Bibliotek, http://bergenbibliotek.no/
+Development sponsored by the **Bergen Public Library** -
+http://www.nettbiblioteket.no
 
 The portlets so far is:
 
@@ -19,3 +19,5 @@ Installation is done in the usual manner: Add collective.blog.portlets to your
 buildout, and install through QuickInstaller or portal_setup.
 
 This product will never use doctests to test anything besides documentation.
+
+
