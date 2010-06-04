@@ -57,16 +57,15 @@ class Renderer(base.Renderer):
     render = ViewPageTemplateFile('last_entries.pt')
     
     def items(self):
-        self._counts = {}
         catalog = getToolByName(self.context, 'portal_catalog')
         # Get the path of where the portlet is created. That's the blog.
         assignment_context = find_assignment_context(self.data, self.context)
-        self.folder_path = '/'.join(assignment_context.getPhysicalPath())
+        folder_path = '/'.join(assignment_context.getPhysicalPath())
         # Because of ExtendedPathIndex being braindead it's tricky (read:
         # impossible) to get all subobjects for all folder, without also
         # getting the folder. So we set depth to 1, which means we only get
         # the immediate children. This is not a bug, but a lack of feature.
-        brains = catalog(path={'query': self.folder_path, 'depth': 1},
+        brains = catalog(path={'query': folder_path, 'depth': 1},
                          sort_on='effective', sort_order='reverse')
         return brains[:self.data.entries]
         
