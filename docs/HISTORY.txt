@@ -5,3 +5,5 @@ Changelog
 -------------------
 
 - Initial release
+
+This version has been tested with Plone 3.3.4 and Plone 4.0b3.

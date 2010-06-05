@@ -4,6 +4,9 @@ Introduction
 This product contains a set of portlets aimed at blogging, but useable also
 for other situtations.
 
+It supports Plone 3 and Plone 4.
+
+
 The development of collective.blog.portlets was sponsored by the 
 **Bergen Public Library** - http://www.nettbiblioteket.no
 
