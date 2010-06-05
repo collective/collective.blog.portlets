@@ -4,8 +4,12 @@ Introduction
 This product contains a set of portlets aimed at blogging, but useable also
 for other situtations.
 
-Development sponsored by the **Bergen Public Library** -
-http://www.nettbiblioteket.no
+The development of collective.blog.portlets was sponsored by the 
+**Bergen Public Library** - http://www.nettbiblioteket.no
+
+
+Portlets
+--------
 
 The portlets so far is:
 
@@ -16,7 +20,9 @@ The portlets so far is:
 * Last posts portlet: Lists the last X documents (sorted by effective date).
 
 Installation is done in the usual manner: Add collective.blog.portlets to your
-buildout, and install through QuickInstaller or portal_setup.
+buildout, and install through QuickInstaller or portal_setup. You can
+then add portlets in the usual manner.
+
 
 This product will never use doctests to test anything besides documentation.
 
