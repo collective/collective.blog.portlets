@@ -102,7 +102,7 @@ class Renderer(base.Renderer):
         return self._counts[year][month]
     
     def archive_url(self, year, month):
-        return '%s/%s?year=%s&month=%s' % (self.folder_path,
+        return '%s/%s?year=%s&month=%s' % (self.context.absolute_url(),
                                            self.data.archive_view,
                                            year, month)
 
