@@ -6,6 +6,8 @@ Changelog
 
 - The url to the archive view didn't work under virtual hosting. [lregebro]
 
+- The portlets now also filter on content types. [lregebro]
+
 
 1.0 (2010-06-05)
 ----------------
