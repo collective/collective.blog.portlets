@@ -4,7 +4,7 @@ Changelog
 1.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- The virtual hosting fix broke something else. Fixed that too. [regebro]
 
 
 1.1 (2010-06-30)

@@ -64,6 +64,7 @@ class Renderer(base.Renderer):
         # Get the path of where the portlet is created. That's the blog.
         assignment_context = find_assignment_context(self.data, self.context)
         self.folder_path = '/'.join(assignment_context.getPhysicalPath())
+        self.folder_url = assignment_context.absolute_url()
 
         # Find the blog types:
         portal_properties = getToolByName(self.context, 'portal_properties', None)
@@ -111,7 +112,7 @@ class Renderer(base.Renderer):
         return self._counts[year][month]
     
     def archive_url(self, year, month):
-        return '%s/%s?year=%s&month=%s' % (self.context.absolute_url(),
+        return '%s/%s?year=%s&month=%s' % (self.folder_url,
                                            self.data.archive_view,
                                            year, month)
 
