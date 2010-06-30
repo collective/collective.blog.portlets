@@ -64,11 +64,20 @@ class Renderer(base.Renderer):
         # Get the path of where the portlet is created. That's the blog.
         assignment_context = find_assignment_context(self.data, self.context)
         self.folder_path = '/'.join(assignment_context.getPhysicalPath())
+
+        # Find the blog types:
+        portal_properties = getToolByName(self.context, 'portal_properties', None)
+        site_properties = getattr(portal_properties, 'site_properties', None)
+        portal_types = site_properties.getProperty('blog_types', None)
+        if portal_types == None:
+            portal_types = ('Document', 'News Item', 'File')
+        
         # Because of ExtendedPathIndex being braindead it's tricky (read:
         # impossible) to get all subobjects for all folder, without also
         # getting the folder. So we set depth to 1, which means we only get
         # the immediate children. This is not a bug, but a lack of feature.
-        brains = catalog(path={'query': self.folder_path, 'depth': 1})
+        brains = catalog(path={'query': self.folder_path, 'depth': 1},
+                         portal_type=portal_types)
         if not brains:
             return
         

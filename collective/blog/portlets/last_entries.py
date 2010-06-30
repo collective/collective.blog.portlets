@@ -65,7 +65,15 @@ class Renderer(base.Renderer):
         # impossible) to get all subobjects for all folder, without also
         # getting the folder. So we set depth to 1, which means we only get
         # the immediate children. This is not a bug, but a lack of feature.
+        # Find the blog types:
+        portal_properties = getToolByName(self.context, 'portal_properties', None)
+        site_properties = getattr(portal_properties, 'site_properties', None)
+        portal_types = site_properties.getProperty('blog_types', None)
+        if portal_types == None:
+            portal_types = ('Document', 'News Item', 'File')
+
         brains = catalog(path={'query': folder_path, 'depth': 1},
+                         portal_type=portal_types,
                          sort_on='effective', sort_order='reverse')
         return brains[:self.data.entries]
         
