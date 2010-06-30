@@ -33,13 +33,13 @@ msgid "Monthly archive"
 msgstr "Månedlig arkiv"
 
 msgid "Last entries"
-msgstr "Siste oppføringer"
+msgstr "Siste innlegg"
 
 msgid "Entries"
-msgstr "Oppføringer"
+msgstr "Innlegg"
 
 msgid "The number of entries to show"
-msgstr "Antall oppføringer å vise"
+msgstr "Antall innlegg å vise"
 
 msgid "month_1"
 msgstr "Januar"

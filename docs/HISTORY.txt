@@ -6,6 +6,8 @@ Changelog
 
 - The virtual hosting fix broke something else. Fixed that too. [regebro]
 
+- Changed "Oppføringer" to "Innlegg" in the norwegian translation. [regebro]
+
 
 1.1 (2010-06-30)
 ----------------
