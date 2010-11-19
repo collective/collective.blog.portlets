@@ -1,0 +1,78 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# Jens Klein <jens@bluedynamics.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2010-11-19 12:28+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: Jens Klein <jens@bluedynamics.com>\n"
+"Language-Team: LANGUAGE <all@jarn.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: de\n"
+"Language-Name: German\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.blog.portlets\n"
+"X-Is-Fallback-For: de-at de-li de-lu de-ch de-de\n"
+
+#: ./archive.pt:6
+msgid "Archive"
+msgstr "Archiv"
+
+#: ./archive.py:43
+msgid "Archive view"
+msgstr "Archiv Ansicht"
+
+#: ./archive.py:44
+msgid "The name of the archive view"
+msgstr "Name der Archiv Ansicht"
+
+msgid "Monthly archive"
+msgstr "Monats Archiv"
+
+msgid "Last entries"
+msgstr "Letzte Einträge"
+
+msgid "Entries"
+msgstr "Einträge"
+
+msgid "The number of entries to show"
+msgstr "Anzahl der zu zeigenden Einträge"
+
+msgid "month_1"
+msgstr "Januar"
+
+msgid "month_2"
+msgstr "Februar"
+
+msgid "month_3"
+msgstr "März"
+
+msgid "month_4"
+msgstr "April"
+
+msgid "month_5"
+msgstr "Mai"
+
+msgid "month_6"
+msgstr "Juni"
+
+msgid "month_7"
+msgstr "Juli"
+
+msgid "month_8"
+msgstr "August"
+
+msgid "month_9"
+msgstr "September"
+
+msgid "month_10"
+msgstr "Oktober"
+
+msgid "month_11"
+msgstr "November"
+
+msgid "month_12"
+msgstr "Dezember"
