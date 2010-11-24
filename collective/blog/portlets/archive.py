@@ -106,7 +106,9 @@ class Renderer(base.Renderer):
         return sorted(self._counts.keys())
     
     def months(self, year):
-        return sorted(self._counts[year].keys())
+        # sort as integers, return as strings
+        _months = sorted([int(m) for m in self._counts[year].keys()])
+        return [str(m) for m in _months]
     
     def count(self, year, month):
         return self._counts[year][month]
