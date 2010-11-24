@@ -103,12 +103,11 @@ class Renderer(base.Renderer):
             months[month] = allmonths[year, month]
             
     def years(self):
-        return sorted(self._counts.keys(), reverse=True)
+        return sorted(self._counts.keys())
     
     def months(self, year):
         # sort as integers, return as strings
-        _months = sorted([int(m) for m in self._counts[year].keys()], 
-                        reverse=True)
+        _months = sorted([int(m) for m in self._counts[year].keys()])
         return [str(m) for m in _months]
     
     def count(self, year, month):
