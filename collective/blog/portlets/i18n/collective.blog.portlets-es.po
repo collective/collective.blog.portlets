@@ -1,0 +1,79 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2010-05-24 11:36+0000\n"
+"PO-Revision-Date: 2011-02-04 16:18+0100\n"
+"Last-Translator: Mikel Larreategi <mlarreategi@codesyntax.com>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: es\n"
+"Language-Name: Spanish\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.blog.portlets\n"
+
+#: ./archive.pt:6
+msgid "Archive"
+msgstr "Archivo"
+
+#: ./archive.py:43
+msgid "Archive view"
+msgstr "Vista del archivo"
+
+#: ./archive.py:44
+msgid "The name of the archive view"
+msgstr "Nombre de la vista del archivo"
+
+msgid "Monthly archive"
+msgstr "Archivo mensual"
+
+msgid "Last entries"
+msgstr "Últimas entradas"
+
+msgid "Entries"
+msgstr "Entradas"
+
+msgid "The number of entries to show"
+msgstr "Número de entradas a mostrar"
+
+msgid "month_1"
+msgstr "Enero"
+
+msgid "month_10"
+msgstr "Octubre"
+
+msgid "month_11"
+msgstr "Noviembre"
+
+msgid "month_12"
+msgstr "Diciembre"
+
+msgid "month_2"
+msgstr "Febrero"
+
+msgid "month_3"
+msgstr "Marzo"
+
+msgid "month_4"
+msgstr "Abril"
+
+msgid "month_5"
+msgstr "Mayo"
+
+msgid "month_6"
+msgstr "Junio"
+
+msgid "month_7"
+msgstr "Julio"
+
+msgid "month_8"
+msgstr "Agosto"
+
+msgid "month_9"
+msgstr "Septiembre"
+
