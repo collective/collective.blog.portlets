@@ -1,0 +1,79 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2010-05-24 11:36+0000\n"
+"PO-Revision-Date: 2011-02-04 16:24+0100\n"
+"Last-Translator: Mikel Larreategi <mlarreategi@codesyntax.com>\n"
+"Language-Team: Basque <eu@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: eu\n"
+"Language-Name: Basque\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.blog.portlets\n"
+
+#: ./archive.pt:6
+msgid "Archive"
+msgstr "Artxiboa"
+
+#: ./archive.py:43
+msgid "Archive view"
+msgstr "Artxiboaren bista"
+
+#: ./archive.py:44
+msgid "The name of the archive view"
+msgstr "Artxiboaren bistaren izena"
+
+msgid "Monthly archive"
+msgstr "Hilabetekako artxiboa"
+
+msgid "Last entries"
+msgstr "Azken sarrerak"
+
+msgid "Entries"
+msgstr "Sarrerak"
+
+msgid "The number of entries to show"
+msgstr "Erakutsiko den sarrera kopurua"
+
+msgid "month_1"
+msgstr "Urtarrila"
+
+msgid "month_10"
+msgstr "Urria"
+
+msgid "month_11"
+msgstr "Azaroa"
+
+msgid "month_12"
+msgstr "Abendua"
+
+msgid "month_2"
+msgstr "Otsaila"
+
+msgid "month_3"
+msgstr "Martxoa"
+
+msgid "month_4"
+msgstr "Apirila"
+
+msgid "month_5"
+msgstr "Maiatza"
+
+msgid "month_6"
+msgstr "Ekaina"
+
+msgid "month_7"
+msgstr "Uztaila"
+
+msgid "month_8"
+msgstr "Abuztua"
+
+msgid "month_9"
+msgstr "Iraila"
+
