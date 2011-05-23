@@ -24,6 +24,7 @@ setup(name='collective.blog.portlets',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'Plone',
           # -*- Extra requirements: -*-
       ],
       entry_points="""

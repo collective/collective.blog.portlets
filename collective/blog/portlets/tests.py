@@ -31,6 +31,7 @@ class FunctionalTestCase(ptc.FunctionalTestCase, TestCase):
         admin.handleErrors = False
         portal_url = self.portal.absolute_url()
         admin.open(portal_url)
+        admin.getLink('Log in').click()
         admin.getControl(name='__ac_name').value = ptc.portal_owner
         admin.getControl(name='__ac_password').value = ptc.default_password
         admin.getControl('Log in').click()
