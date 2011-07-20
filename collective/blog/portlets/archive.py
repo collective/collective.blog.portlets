@@ -4,6 +4,8 @@ from plone.portlets.interfaces import IPortletDataProvider
 from plone.app.portlets.portlets import base
 from Products.CMFCore.utils import getToolByName
 
+from Products.CMFPlone.i18nl10n import monthname_msgid
+
 from zope import schema
 from zope.formlib import form
 
@@ -109,6 +111,10 @@ class Renderer(base.Renderer):
         # sort as integers, return as strings
         _months = sorted([int(m) for m in self._counts[year].keys()])
         return [str(m) for m in _months]
+
+    def monthname(self, month):
+        return monthname_msgid(month)
+    
     
     def count(self, year, month):
         return self._counts[year][month]

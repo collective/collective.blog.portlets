@@ -14,7 +14,8 @@
             <li tal:repeat="month python:view.months(year)">
                 <a tal:attributes="href python:view.archive_url(year, month)">
                     <span class="archive-month"
-                        tal:content="string:month_${month}"
+                        tal:content="python:view.monthname(month)"
+                        i18n:domain="plonelocales"
                         i18n:translate="">
                         January
                     </span>
