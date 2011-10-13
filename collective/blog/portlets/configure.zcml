@@ -17,6 +17,10 @@
 
   <!-- Register the portlet -->
 
+  <include package="Products.CMFCore" file="permissions.zcml"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    zcml:condition="have plone-41" />
+
   <plone:portlet
     name="collective.blog.portlets.archive"
     interface=".archive.IArchivePortlet"
