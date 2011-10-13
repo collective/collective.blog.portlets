@@ -2,6 +2,7 @@
   xmlns="http://namespaces.zope.org/zope"
   xmlns:five="http://namespaces.zope.org/five"
   xmlns:plone="http://namespaces.plone.org/plone"
+  xmlns:i18n="http://namespaces.zope.org/i18n"
   xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
   i18n_domain="collective.blog.portlets">
 
@@ -9,9 +10,9 @@
   
   <genericsetup:registerProfile
     name="default"
-    title="collective.blog.portlets"
+    title="Collective Blog Portlets"
     directory="profiles/default"
-    description=""
+    description="Extra portlets for the blogging"
     provides="Products.GenericSetup.interfaces.EXTENSION"
     />
 
@@ -42,5 +43,7 @@
     addview=".last_entries.AddForm"
     editview=".last_entries.EditForm"
     />
+    
+  <i18n:registerTranslations directory="locales" />
 
 </configure>

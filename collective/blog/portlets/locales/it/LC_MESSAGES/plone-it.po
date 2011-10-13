@@ -1,0 +1,23 @@
+# Translation of collective.blog.portlets to Italian
+# Rigel Di Scala - IPnext srl 2011
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Plone\n"
+"POT-Creation-Date: 2011-10-13 18.07+0200\n"
+"PO-Revision-Date: 2011-10-13 18.07+0200\n"
+"Last-Translator:zedr \n"
+"Language-Team: http://www.ipnext.it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n!=1\n"
+"Language-Code: it\n"
+"Language-Name: Italiano\n"
+"Preferred-Encodings: latin1 utf-8\n
+"Domain: plone\n"
+"X-Is-Fallback-For: it-ch it-it\n"
+
+msgid "Monthly archive"
+msgstr "Archivio Mensile"
+

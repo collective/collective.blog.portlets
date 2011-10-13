@@ -1,13 +1,20 @@
 <?xml version="1.0"?>
-<portlets>
+<portlets
+	xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="collective.blog.portlets">
+    
   <portlet
     addview="collective.blog.portlets.archive"
     title="Monthly archive"
     description="A blog style archive portlet"
+    i18n:attributes="title; description"
     />
+    
   <portlet
     addview="collective.blog.portlets.last_entries"
     title="Last entries"
     description="A blog style last entries portlet"
+    i18n:attributes="title; description"
     />
+    
 </portlets>
