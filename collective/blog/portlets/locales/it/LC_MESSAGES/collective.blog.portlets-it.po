@@ -19,7 +19,7 @@ msgstr ""
 "X-Is-Fallback-For: it-ch it-it\n"
 
 #: ./archive.pt:6
-msgid "Archive"
+msgid "label_archive"
 msgstr "Archivio"
 
 #: ./archive.py:43
@@ -33,7 +33,7 @@ msgstr "Il nome della vista dell'archivio"
 msgid "Monthly archive"
 msgstr "Archivio mensile"
 
-msgid "Last entries"
+msgid "label_last_entries"
 msgstr "Ultimi post"
 
 msgid "Entries"

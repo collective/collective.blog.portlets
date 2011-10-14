@@ -7,6 +7,7 @@
   i18n_domain="collective.blog.portlets">
 
   <five:registerPackage package="." initialize=".initialize" />
+  <i18n:registerTranslations directory="locales" />
   
   <genericsetup:registerProfile
     name="default"
@@ -44,6 +45,6 @@
     editview=".last_entries.EditForm"
     />
     
-  <i18n:registerTranslations directory="locales" />
+
 
 </configure>
