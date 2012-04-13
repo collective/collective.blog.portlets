@@ -5,6 +5,8 @@ Changelog
 ----------------
 - Sort months in archive properly. [jbaldivieso]
 
+- Spanish and Basque translations. [erral]
+
 
 1.2 (2010-06-30)
 ----------------
