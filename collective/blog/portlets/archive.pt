@@ -3,7 +3,12 @@
 
     <dt class="portletHeader">
         <span class="portletTopLeft"></span>
-        <i18n:block translate="label_archive">Archive</i18n:block>
+        <tal:title condition="view/data/header"
+                tal:content="view/data/header">
+        </tal:title>
+        <i18n:block 
+            tal:condition="not:view/data/header"
+            translate="label_archive">Archive</i18n:block>
         <span class="portletTopRight"></span>
     </dt>
 

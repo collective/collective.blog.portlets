@@ -21,6 +21,10 @@ class IArchivePortlet(IPortletDataProvider):
     data that is being rendered and the portlet assignment itself are the
     same.
     """
+
+    header = schema.TextLine(title=_(u'Title of the portlet'),
+                             description=_(u'The text that will be shown as the title of the portlet'),
+                             required=False)
     
     archive_view = schema.TextLine(title=_(u"Archive view"),
                                    description=_(u"The name of the archive view"),
@@ -44,10 +48,15 @@ class Assignment(base.Assignment):
 
     implements(IArchivePortlet)
 
+    header = u'Monthly archive'
     archive_view = u'blog_view'
     reversed = False
 
-    def __init__(self, archive_view=u'blog_view', reversed=False):
+    def __init__(self, header=u'Monthly archive',
+                       archive_view=u'blog_view', 
+                       reversed=False):
+
+        self.header = header
         self.archive_view = archive_view
         self.reversed = reversed
         
