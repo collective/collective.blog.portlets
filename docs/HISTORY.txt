@@ -4,6 +4,9 @@ Changelog
 1.4 (unreleased)
 ----------------
 
+- Merged zedr-plone4.1 branch: includes i18n work and conversion of i18n folder
+  into locales folder [erral]
+
 - Merged erral-portlet-improvements branch: it adds an option
   to show the dates in reversed order and reuses Plone i18n machinery
   for month names [erral]
