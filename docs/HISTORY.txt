@@ -4,7 +4,9 @@ Changelog
 1.4 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Merged erral-portlet-improvements branch: it adds an option
+  to show the dates in reversed order and reuses Plone i18n machinery
+  for month names [erral]
 
 
 1.3 (2012-04-17)
