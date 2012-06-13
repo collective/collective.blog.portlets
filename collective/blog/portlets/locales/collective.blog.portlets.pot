@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-06-13 09:18+0000\n"
+"POT-Creation-Date: 2012-06-13 10:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "A blog style last entries portlet"
 msgstr ""
 
-#: ./archive.py:25
+#: ./archive.py:29
 msgid "Archive view"
 msgstr ""
 
@@ -35,16 +35,16 @@ msgstr ""
 msgid "Last entries"
 msgstr ""
 
-#: ./archive.py:59
+#: ./archive.py:68
 #: ./profiles/default/portlets.xml
 msgid "Monthly archive"
 msgstr ""
 
-#: ./archive.py:31
+#: ./archive.py:35
 msgid "Reverse year and month list"
 msgstr ""
 
-#: ./archive.py:26
+#: ./archive.py:30
 msgid "The name of the archive view"
 msgstr ""
 
@@ -52,12 +52,20 @@ msgstr ""
 msgid "The number of entries to show"
 msgstr ""
 
-#: ./archive.py:32
+#: ./archive.py:26
+msgid "The text that will be shown as the title of the portlet"
+msgstr ""
+
+#: ./archive.py:25
+msgid "Title of the portlet"
+msgstr ""
+
+#: ./archive.py:36
 msgid "When checked, the first shown year will be the current one, and then the previous ones. The same applies to the months"
 msgstr ""
 
 #. Default: "Archive"
-#: ./archive.pt:6
+#: ./archive.pt:9
 msgid "label_archive"
 msgstr ""
 
