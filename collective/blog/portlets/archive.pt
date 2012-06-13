@@ -3,7 +3,7 @@
 
     <dt class="portletHeader">
         <span class="portletTopLeft"></span>
-        <i18n:block translate="">Archive</i18n:block>
+        <i18n:block translate="label_archive">Archive</i18n:block>
         <span class="portletTopRight"></span>
     </dt>
 

@@ -3,7 +3,7 @@ import os
 
 version = '1.4.dev0'
 
-setup(name='collective.blog.portlets',
+setup(name='Collective Blog Portlets',
       version=version,
       description="Archive view and portlet",
       long_description=open("README.txt").read() + "\n" +

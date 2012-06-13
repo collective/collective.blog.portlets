@@ -32,7 +32,7 @@ msgstr ""
 msgid "Monthly archive"
 msgstr ""
 
-msgid "Last entries"
+msgid "last_entries"
 msgstr ""
 
 msgid "Entries"
