@@ -3,9 +3,9 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: collective.blog.portlets\n"
 "POT-Creation-Date: 2012-06-13 10:07+0000\n"
-"PO-Revision-Date: 2011-02-04 16:24+0100\n"
+"PO-Revision-Date: 2012-06-13 12:11+0100\n"
 "Last-Translator: Mikel Larreategi <mlarreategi@codesyntax.com>\n"
 "Language-Team: Basque <eu@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,14 +16,15 @@ msgstr ""
 "Language-Name: Basque\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.blog.portlets\n"
+"X-Poedit-Language: Basque\n"
 
 #: ./profiles/default/portlets.xml
 msgid "A blog style archive portlet"
-msgstr ""
+msgstr "Blogerako hilabetekako artxibo-portleta"
 
 #: ./profiles/default/portlets.xml
 msgid "A blog style last entries portlet"
-msgstr ""
+msgstr "Blogeko azken sarreren portleta"
 
 #: ./archive.py:29
 msgid "Archive view"
@@ -45,7 +46,7 @@ msgstr "Hilabetekako artxiboa"
 
 #: ./archive.py:35
 msgid "Reverse year and month list"
-msgstr ""
+msgstr "Urte eta hilabeteak alderantzikatu"
 
 #: ./archive.py:30
 msgid "The name of the archive view"
@@ -57,23 +58,23 @@ msgstr "Erakutsiko den sarrera kopurua"
 
 #: ./archive.py:26
 msgid "The text that will be shown as the title of the portlet"
-msgstr ""
+msgstr "Portletaren izenburu gisa erabiliko den testua"
 
 #: ./archive.py:25
 msgid "Title of the portlet"
-msgstr ""
+msgstr "Izenburua"
 
 #: ./archive.py:36
 msgid "When checked, the first shown year will be the current one, and then the previous ones. The same applies to the months"
-msgstr ""
+msgstr "Aukeratuta dagoenean, lehenengo agertuko den urtea berriena izango da eta ondoren zaharragoak. Hilabeteak ere era berean ordenatuko dira."
 
 #. Default: "Archive"
 #: ./archive.pt:9
 msgid "label_archive"
-msgstr ""
+msgstr "Artxiboa"
 
 #. Default: "Last entries"
 #: ./last_entries.pt:6
 msgid "label_last_entries"
-msgstr ""
+msgstr "Azken sarrerak"
 
