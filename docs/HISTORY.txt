@@ -4,6 +4,12 @@ Changelog
 1.4 (unreleased)
 ----------------
 
+- Update translations files
+  [erral]
+
+- Add portlet header field
+  [erral]
+
 - Merged zedr-plone4.1 branch: includes i18n work and conversion of i18n folder
   into locales folder [erral]
 
