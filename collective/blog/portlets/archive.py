@@ -4,6 +4,8 @@ from plone.portlets.interfaces import IPortletDataProvider
 from plone.app.portlets.portlets import base
 from Products.CMFCore.utils import getToolByName
 
+from Products.CMFPlone.i18nl10n import monthname_msgid
+
 from zope import schema
 from zope.formlib import form
 
@@ -24,6 +26,13 @@ class IArchivePortlet(IPortletDataProvider):
                                    description=_(u"The name of the archive view"),
                                    default=u'blog_view',
                                    required=True)
+
+
+    reversed = schema.Bool(title=_(u"Reverse year and month list"),
+                           description=_("When checked, the first shown year will be the current one, and then the previous ones. The same applies to the months"),
+                           default=False,
+                           )
+     
     
 
 class Assignment(base.Assignment):
@@ -36,10 +45,12 @@ class Assignment(base.Assignment):
     implements(IArchivePortlet)
 
     archive_view = u'blog_view'
+    reversed = False
 
-    def __init__(self, archive_view=u'blog_view'):
+    def __init__(self, archive_view=u'blog_view', reversed=False):
         self.archive_view = archive_view
-
+        self.reversed = reversed
+        
     @property
     def title(self):
         """This property is used to give the title of the portlet in the
@@ -103,12 +114,23 @@ class Renderer(base.Renderer):
             months[month] = allmonths[year, month]
             
     def years(self):
-        return sorted(self._counts.keys())
+        items = sorted(self._counts.keys())
+        if self.data.reversed:
+            return reversed(items)
+
+        return items
     
     def months(self, year):
         # sort as integers, return as strings
         _months = sorted([int(m) for m in self._counts[year].keys()])
-        return [str(m) for m in _months]
+        items = [str(m) for m in _months]
+        if self.data.reversed:
+            return reversed(items)
+
+        return items
+
+    def monthname(self, month):
+        return monthname_msgid(month)
     
     def count(self, year, month):
         return self._counts[year][month]

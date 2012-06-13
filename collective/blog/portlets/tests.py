@@ -92,42 +92,50 @@ class FunctionalTestCase(ptc.FunctionalTestCase, TestCase):
         # Check that the links are ok:
         pos = portlet.find('blog_view?year=2008&amp;month=2', pos)
         self.assert_(pos != -1)
-        pos = portlet.find('month_2', pos)
+        pos = portlet.find('month_feb', pos)
         self.assert_(pos != -1)
         pos = portlet.find('(1)', pos)
         self.assert_(pos != -1)
-        pos = portlet.find('month_5', pos)
+        pos = portlet.find('month_may', pos)
         self.assert_(pos != -1)
         pos = portlet.find('(1)', pos)
         self.assert_(pos != -1)
         pos = portlet.find('2009', pos)                         
         self.assert_(pos != -1)
-        pos = portlet.find('month_7', pos)
+        pos = portlet.find('month_jul', pos)
         self.assert_(pos != -1)
         pos = portlet.find('(1)', pos)
         self.assert_(pos != -1)
         pos = portlet.find('2010', pos)
         self.assert_(pos != -1)
-        pos = portlet.find('month_1', pos)
+        pos = portlet.find('month_jan', pos)
         self.assert_(pos != -1)
         pos = portlet.find('(3)', pos)
         self.assert_(pos != -1)
-        pos = portlet.find('month_2', pos)
+        pos = portlet.find('month_feb', pos)
         self.assert_(pos != -1)
         pos = portlet.find('(2)', pos)
         self.assert_(pos != -1)
-        pos = portlet.find('month_3', pos)        
+        pos = portlet.find('month_mar', pos)        
         self.assert_(pos != -1)
         pos = portlet.find('(1)', pos)        
         self.assert_(pos != -1)
-        pos = portlet.find('month_4', pos)
+        pos = portlet.find('month_apr', pos)
         self.assert_(pos != -1)
         pos = portlet.find('(1)', pos)
         self.assert_(pos != -1)
-        pos = portlet.find('month_5', pos)
+        pos = portlet.find('month_may', pos)
         self.assert_(pos != -1)
         pos = portlet.find('(1)', pos)
         self.assert_(pos != -1)
+        # Check that older years appear first
+        pos_2008 = portlet.find('2008')
+        pos_2009 = portlet.find('2009')
+        self.failUnless(pos_2008 < pos_2009)
+        # Check that older months appear first in a year
+        pos_feb = portlet.find('month_feb', pos_2008)
+        pos_may = portlet.find('month_may', pos_2008)
+        self.failUnless(pos_feb < pos_may)
 
     def test_last_entries(self):
         admin = self._getAdminBrowser()
@@ -152,6 +160,30 @@ class FunctionalTestCase(ptc.FunctionalTestCase, TestCase):
         # But no more
         self.assert_('Blog Entry for 2010-01-07 12:00' not in contents)
 
+    def test_reversed_ordered_portlet(self):
+        admin = self._getAdminBrowser()
+        admin.open(self.blog_url)
+        # Add the portlet:
+        admin.getLink('Manage portlets').click()
+        self.assert_('Last entries' in admin.contents)
+        admin.open(self.blog_url + '/++contextportlets++plone.rightcolumn/+/collective.blog.portlets.archive')
+        admin.getControl(name='form.reversed').value = 'checked'
+        admin.getControl(name='form.actions.save').click()
+
+        admin.open(self.blog_url)
+        portlet = admin.contents[admin.contents.find('<dl class="portlet portletArchivePortlet">'):]
+        portlet = portlet[:portlet.find('</dl>')]
+        
+        pos_2009 = portlet.find('2009')
+        pos_2008 = portlet.find('2008')
+        self.failUnless(pos_2009 < pos_2008)
+        pos_may = portlet.find('month_may', pos_2008)
+        pos_feb = portlet.find('month_feb', pos_2008)
+        self.failUnless(pos_may < pos_feb)
+
+
+
+        
 def test_suite():
     return unittest.TestSuite([
         unittest.makeSuite(FunctionalTestCase),
