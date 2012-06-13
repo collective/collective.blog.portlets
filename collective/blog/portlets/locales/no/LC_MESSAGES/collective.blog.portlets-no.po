@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-05-24 11:36+0000\n"
+"POT-Creation-Date: 2012-06-13 09:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,62 +17,55 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.blog.portlets\n"
 
-#: ./archive.pt:6
-msgid "Archive"
-msgstr "Arkiv"
+#: ./profiles/default/portlets.xml
+msgid "A blog style archive portlet"
+msgstr ""
 
-#: ./archive.py:43
+#: ./profiles/default/portlets.xml
+msgid "A blog style last entries portlet"
+msgstr ""
+
+#: ./archive.py:25
 msgid "Archive view"
 msgstr "Arkivvisning"
 
-#: ./archive.py:44
-msgid "The name of the archive view"
-msgstr "Navnet på arkivvisningen"
-
-msgid "Monthly archive"
-msgstr "Månedlig arkiv"
-
-msgid "Last entries"
-msgstr "Siste innlegg"
-
+#: ./last_entries.py:23
 msgid "Entries"
 msgstr "Innlegg"
 
+#: ./last_entries.py:46
+#: ./profiles/default/portlets.xml
+msgid "Last entries"
+msgstr "Siste innlegg"
+
+#: ./archive.py:59
+#: ./profiles/default/portlets.xml
+msgid "Monthly archive"
+msgstr "Månedlig arkiv"
+
+#: ./archive.py:31
+msgid "Reverse year and month list"
+msgstr ""
+
+#: ./archive.py:26
+msgid "The name of the archive view"
+msgstr "Navnet på arkivvisningen"
+
+#: ./last_entries.py:24
 msgid "The number of entries to show"
 msgstr "Antall innlegg å vise"
 
-msgid "month_1"
-msgstr "Januar"
+#: ./archive.py:32
+msgid "When checked, the first shown year will be the current one, and then the previous ones. The same applies to the months"
+msgstr ""
 
-msgid "month_2"
-msgstr "Februar"
+#. Default: "Archive"
+#: ./archive.pt:6
+msgid "label_archive"
+msgstr ""
 
-msgid "month_3"
-msgstr "Mars"
+#. Default: "Last entries"
+#: ./last_entries.pt:6
+msgid "label_last_entries"
+msgstr ""
 
-msgid "month_4"
-msgstr "April"
-
-msgid "month_5"
-msgstr "Mai"
-
-msgid "month_6"
-msgstr "Juni"
-
-msgid "month_7"
-msgstr "Juli"
-
-msgid "month_8"
-msgstr "August"
-
-msgid "month_9"
-msgstr "September"
-
-msgid "month_10"
-msgstr "Oktober"
-
-msgid "month_11"
-msgstr "November"
-
-msgid "month_12"
-msgstr "Desember"

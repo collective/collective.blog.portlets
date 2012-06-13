@@ -4,9 +4,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
-"POT-Creation-Date: 2011-10-13 18.07+0200\n"
+"POT-Creation-Date: 2012-06-13 09:18+0000\n"
 "PO-Revision-Date: 2011-10-13 18.07+0200\n"
-"Last-Translator:zedr \n"
+"Last-Translator: zedr\n"
 "Language-Team: http://www.ipnext.it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -14,71 +14,59 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n!=1\n"
 "Language-Code: it\n"
 "Language-Name: Italiano\n"
-"Preferred-Encodings: latin1 utf-8\n
+"Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.blog.portlets\n"
 "X-Is-Fallback-For: it-ch it-it\n"
 
+#: ./profiles/default/portlets.xml
+msgid "A blog style archive portlet"
+msgstr ""
+
+#: ./profiles/default/portlets.xml
+msgid "A blog style last entries portlet"
+msgstr ""
+
+#: ./archive.py:25
+msgid "Archive view"
+msgstr "Vista Archivio"
+
+#: ./last_entries.py:23
+msgid "Entries"
+msgstr "Post"
+
+#: ./last_entries.py:46
+#: ./profiles/default/portlets.xml
+msgid "Last entries"
+msgstr ""
+
+#: ./archive.py:59
+#: ./profiles/default/portlets.xml
+msgid "Monthly archive"
+msgstr "Archivio mensile"
+
+#: ./archive.py:31
+msgid "Reverse year and month list"
+msgstr ""
+
+#: ./archive.py:26
+msgid "The name of the archive view"
+msgstr "Il nome della vista dell'archivio"
+
+#: ./last_entries.py:24
+msgid "The number of entries to show"
+msgstr "Il numero di post da mostrare"
+
+#: ./archive.py:32
+msgid "When checked, the first shown year will be the current one, and then the previous ones. The same applies to the months"
+msgstr ""
+
+#. Default: "Archive"
 #: ./archive.pt:6
 msgid "label_archive"
 msgstr "Archivio"
 
-#: ./archive.py:43
-msgid "Archive view"
-msgstr "Vista Archivio"
-
-#: ./archive.py:44
-msgid "The name of the archive view"
-msgstr "Il nome della vista dell'archivio"
-
-msgid "Monthly archive"
-msgstr "Archivio mensile"
-
+#. Default: "Last entries"
+#: ./last_entries.pt:6
 msgid "label_last_entries"
 msgstr "Ultimi post"
 
-msgid "Entries"
-msgstr "Post"
-
-msgid "The number of entries to show"
-msgstr "Il numero di post da mostrare"
-
-entries = schema.Int(title=_(u""),
-                         description=_(u""),
-                         default=5,
-                         required=True)
-
-msgid "month_1"
-msgstr "mese_1"
-
-msgid "month_10"
-msgstr "mese_10"
-
-msgid "month_11"
-msgstr "mese_11"
-
-msgid "month_12"
-msgstr "mese_12"
-
-msgid "month_2"
-msgstr "mese_2"
-
-msgid "month_3"
-msgstr "mese_3"
-
-msgid "month_4"
-msgstr "mese_4"
-
-msgid "month_5"
-msgstr "mese_5"
-
-msgid "month_6"
-msgstr "mese_6"
-
-msgid "month_7"
-msgstr "mese_7"
-
-msgid "month_8"
-msgstr "mese_8"
-
-msgid "month_9"
-msgstr "mese_9"

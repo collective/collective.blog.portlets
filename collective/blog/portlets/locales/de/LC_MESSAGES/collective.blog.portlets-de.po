@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-11-19 12:28+0100\n"
+"POT-Creation-Date: 2012-06-13 09:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: Jens Klein <jens@bluedynamics.com>\n"
 "Language-Team: LANGUAGE <all@jarn.com>\n"
@@ -17,62 +17,55 @@ msgstr ""
 "Domain: collective.blog.portlets\n"
 "X-Is-Fallback-For: de-at de-li de-lu de-ch de-de\n"
 
-#: ./archive.pt:6
-msgid "Archive"
-msgstr "Archiv"
+#: ./profiles/default/portlets.xml
+msgid "A blog style archive portlet"
+msgstr ""
 
-#: ./archive.py:43
+#: ./profiles/default/portlets.xml
+msgid "A blog style last entries portlet"
+msgstr ""
+
+#: ./archive.py:25
 msgid "Archive view"
 msgstr "Archiv Ansicht"
 
-#: ./archive.py:44
-msgid "The name of the archive view"
-msgstr "Name der Archiv Ansicht"
-
-msgid "Monthly archive"
-msgstr "Monats Archiv"
-
-msgid "Last entries"
-msgstr "Letzte Einträge"
-
+#: ./last_entries.py:23
 msgid "Entries"
 msgstr "Einträge"
 
+#: ./last_entries.py:46
+#: ./profiles/default/portlets.xml
+msgid "Last entries"
+msgstr "Letzte Einträge"
+
+#: ./archive.py:59
+#: ./profiles/default/portlets.xml
+msgid "Monthly archive"
+msgstr "Monats Archiv"
+
+#: ./archive.py:31
+msgid "Reverse year and month list"
+msgstr ""
+
+#: ./archive.py:26
+msgid "The name of the archive view"
+msgstr "Name der Archiv Ansicht"
+
+#: ./last_entries.py:24
 msgid "The number of entries to show"
 msgstr "Anzahl der zu zeigenden Einträge"
 
-msgid "month_1"
-msgstr "Januar"
+#: ./archive.py:32
+msgid "When checked, the first shown year will be the current one, and then the previous ones. The same applies to the months"
+msgstr ""
 
-msgid "month_2"
-msgstr "Februar"
+#. Default: "Archive"
+#: ./archive.pt:6
+msgid "label_archive"
+msgstr ""
 
-msgid "month_3"
-msgstr "März"
+#. Default: "Last entries"
+#: ./last_entries.pt:6
+msgid "label_last_entries"
+msgstr ""
 
-msgid "month_4"
-msgstr "April"
-
-msgid "month_5"
-msgstr "Mai"
-
-msgid "month_6"
-msgstr "Juni"
-
-msgid "month_7"
-msgstr "Juli"
-
-msgid "month_8"
-msgstr "August"
-
-msgid "month_9"
-msgstr "September"
-
-msgid "month_10"
-msgstr "Oktober"
-
-msgid "month_11"
-msgstr "November"
-
-msgid "month_12"
-msgstr "Dezember"

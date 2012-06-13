@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-05-24 11:36+0000\n"
+"POT-Creation-Date: 2012-06-13 09:18+0000\n"
 "PO-Revision-Date: 2011-02-04 16:24+0100\n"
 "Last-Translator: Mikel Larreategi <mlarreategi@codesyntax.com>\n"
 "Language-Team: Basque <eu@li.org>\n"
@@ -17,63 +17,55 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.blog.portlets\n"
 
-#: ./archive.pt:6
-msgid "Archive"
-msgstr "Artxiboa"
+#: ./profiles/default/portlets.xml
+msgid "A blog style archive portlet"
+msgstr ""
 
-#: ./archive.py:43
+#: ./profiles/default/portlets.xml
+msgid "A blog style last entries portlet"
+msgstr ""
+
+#: ./archive.py:25
 msgid "Archive view"
 msgstr "Artxiboaren bista"
 
-#: ./archive.py:44
-msgid "The name of the archive view"
-msgstr "Artxiboaren bistaren izena"
-
-msgid "Monthly archive"
-msgstr "Hilabetekako artxiboa"
-
-msgid "Last entries"
-msgstr "Azken sarrerak"
-
+#: ./last_entries.py:23
 msgid "Entries"
 msgstr "Sarrerak"
 
+#: ./last_entries.py:46
+#: ./profiles/default/portlets.xml
+msgid "Last entries"
+msgstr "Azken sarrerak"
+
+#: ./archive.py:59
+#: ./profiles/default/portlets.xml
+msgid "Monthly archive"
+msgstr "Hilabetekako artxiboa"
+
+#: ./archive.py:31
+msgid "Reverse year and month list"
+msgstr ""
+
+#: ./archive.py:26
+msgid "The name of the archive view"
+msgstr "Artxiboaren bistaren izena"
+
+#: ./last_entries.py:24
 msgid "The number of entries to show"
 msgstr "Erakutsiko den sarrera kopurua"
 
-msgid "month_1"
-msgstr "Urtarrila"
+#: ./archive.py:32
+msgid "When checked, the first shown year will be the current one, and then the previous ones. The same applies to the months"
+msgstr ""
 
-msgid "month_10"
-msgstr "Urria"
+#. Default: "Archive"
+#: ./archive.pt:6
+msgid "label_archive"
+msgstr ""
 
-msgid "month_11"
-msgstr "Azaroa"
-
-msgid "month_12"
-msgstr "Abendua"
-
-msgid "month_2"
-msgstr "Otsaila"
-
-msgid "month_3"
-msgstr "Martxoa"
-
-msgid "month_4"
-msgstr "Apirila"
-
-msgid "month_5"
-msgstr "Maiatza"
-
-msgid "month_6"
-msgstr "Ekaina"
-
-msgid "month_7"
-msgstr "Uztaila"
-
-msgid "month_8"
-msgstr "Abuztua"
-
-msgid "month_9"
-msgstr "Iraila"
+#. Default: "Last entries"
+#: ./last_entries.pt:6
+msgid "label_last_entries"
+msgstr ""
 

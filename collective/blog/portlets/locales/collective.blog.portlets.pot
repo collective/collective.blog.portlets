@@ -1,10 +1,7 @@
-# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
-# SOME DESCRIPTIVE TITLE.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-05-24 11:36+0000\n"
+"POT-Creation-Date: 2012-06-13 09:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,70 +12,57 @@ msgstr ""
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: collective.blog.portlets\n"
+"Domain: DOMAIN\n"
 
-#: ./archive.pt:6
-msgid "Archive"
+#: ./profiles/default/portlets.xml
+msgid "A blog style archive portlet"
 msgstr ""
 
-#: ./archive.py:43
+#: ./profiles/default/portlets.xml
+msgid "A blog style last entries portlet"
+msgstr ""
+
+#: ./archive.py:25
 msgid "Archive view"
 msgstr ""
 
-#: ./archive.py:44
-msgid "The name of the archive view"
-msgstr ""
-
-msgid "Monthly archive"
-msgstr ""
-
-msgid "last_entries"
-msgstr ""
-
+#: ./last_entries.py:23
 msgid "Entries"
 msgstr ""
 
+#: ./last_entries.py:46
+#: ./profiles/default/portlets.xml
+msgid "Last entries"
+msgstr ""
+
+#: ./archive.py:59
+#: ./profiles/default/portlets.xml
+msgid "Monthly archive"
+msgstr ""
+
+#: ./archive.py:31
+msgid "Reverse year and month list"
+msgstr ""
+
+#: ./archive.py:26
+msgid "The name of the archive view"
+msgstr ""
+
+#: ./last_entries.py:24
 msgid "The number of entries to show"
 msgstr ""
 
-entries = schema.Int(title=_(u""),
-                         description=_(u""),
-                         default=5,
-                         required=True)
-
-msgid "month_1"
+#: ./archive.py:32
+msgid "When checked, the first shown year will be the current one, and then the previous ones. The same applies to the months"
 msgstr ""
 
-msgid "month_10"
+#. Default: "Archive"
+#: ./archive.pt:6
+msgid "label_archive"
 msgstr ""
 
-msgid "month_11"
-msgstr ""
-
-msgid "month_12"
-msgstr ""
-
-msgid "month_2"
-msgstr ""
-
-msgid "month_3"
-msgstr ""
-
-msgid "month_4"
-msgstr ""
-
-msgid "month_5"
-msgstr ""
-
-msgid "month_6"
-msgstr ""
-
-msgid "month_7"
-msgstr ""
-
-msgid "month_8"
-msgstr ""
-
-msgid "month_9"
+#. Default: "Last entries"
+#: ./last_entries.pt:6
+msgid "label_last_entries"
 msgstr ""
 
