@@ -4,6 +4,8 @@ Changelog
 1.4 (unreleased)
 ----------------
 
+- Don't require cmf.ManagePortal to add and edit portlets [erral]
+
 - Update translations files
   [erral]
 
