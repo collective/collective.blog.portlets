@@ -1,0 +1,79 @@
+# Rranslation of collective.blog.portlets to Brazilian Portuguese
+# Luciano Camargo Cruz <luciano@lccruz.net>, 2012
+msgid ""
+msgstr ""
+"Project-Id-Version: collective.blog.portlets\n"
+"POT-Creation-Date: 2012-08-24 17:10+0000\n"
+"PO-Revision-Date: 2012-08/24 17:20+0100\n"
+"Last-Translator: Luciano Camargo Cruz <luciano@lccruz.net>\n"
+"Language-Team: <plone-i18n@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: pt-br\n"
+"Language-Name: Português do Brasil\n"
+"Preferred-Encodings: latin1 utf-8\n"
+"Domain: collective.blog.portlets\n"
+"X-Poedit-Language: Português do Brasil\n"
+
+#: ./profiles/default/portlets.xml
+msgid "A blog style archive portlet"
+msgstr "Portlet de arquivo por anos e meses"
+
+#: ./profiles/default/portlets.xml
+msgid "A blog style last entries portlet"
+msgstr "Portlet de últimas entradas no blog"
+
+#: ./archive.py:29
+msgid "Archive view"
+msgstr "Visão do arquivo"
+
+#: ./last_entries.py:23
+msgid "Entries"
+msgstr "Entradas"
+
+#: ./last_entries.py:46
+#: ./profiles/default/portlets.xml
+msgid "Last entries"
+msgstr "Últimas entradas"
+
+#: ./archive.py:68
+#: ./profiles/default/portlets.xml
+msgid "Monthly archive"
+msgstr "Arquivo mensal"
+
+#: ./archive.py:35
+msgid "Reverse year and month list"
+msgstr "Mostrar ano e mês em ordem inversa"
+
+#: ./archive.py:30
+msgid "The name of the archive view"
+msgstr "O nome da visão do arquivo"
+
+#: ./last_entries.py:24
+msgid "The number of entries to show"
+msgstr "Número de entradas mostradas"
+
+#: ./archive.py:26
+msgid "The text that will be shown as the title of the portlet"
+msgstr "O texto que será mostrado como o título do portlet"
+
+#: ./archive.py:25
+msgid "Title of the portlet"
+msgstr "Título do portlet"
+
+#: ./archive.py:36
+msgid "When checked, the first shown year will be the current one, and then the previous ones. The same applies to the months"
+msgstr "Quando selecionado, o primeiro ano mostrado será o atual e depois os anteriores. O mesmo se aplica para os meses"
+
+#. Default: "Archive"
+#: ./archive.pt:9
+msgid "label_archive"
+msgstr "Arquivos"
+
+#. Default: "Last entries"
+#: ./last_entries.pt:6
+msgid "label_last_entries"
+msgstr "Últimas entradas"
+
