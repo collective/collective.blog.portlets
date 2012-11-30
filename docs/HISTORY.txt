@@ -19,6 +19,8 @@ Changelog
   to show the dates in reversed order and reuses Plone i18n machinery
   for month names [erral]
 
+- Added French translation. [sdemagny]
+
 
 1.3 (2012-04-17)
 ----------------
