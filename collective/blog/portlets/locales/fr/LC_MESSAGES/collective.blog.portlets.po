@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: collective.blog.portlets\n"
-"POT-Creation-Date: 2012-06-13 10:07+0000\n"
+"POT-Creation-Date: 2013-03-10 00:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: Sabrina Demagny <sabrina.demagny@gmail.com>\n"
 "Language-Team: French <LL@li.org>\n"
@@ -14,29 +14,27 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.blog.portlets\n"
 
-#: ./profiles/default/portlets.xml
-msgid "A blog style archive portlet"
-msgstr "Une portlet type archive de blog"
-
-#: ./profiles/default/portlets.xml
-msgid "A blog style last entries portlet"
-msgstr "Une portlet type derniers billets de blog"
-
 #: ./archive.py:29
 msgid "Archive view"
 msgstr "Vue archive"
+
+#: Profile title in configure.zcml
+msgid "Collective Blog Portlets"
+msgstr ""
 
 #: ./last_entries.py:23
 msgid "Entries"
 msgstr "Billets"
 
+#: Profile description in configure.zcml
+msgid "Extra portlets for the blogging"
+msgstr ""
+
 #: ./last_entries.py:46
-#: ./profiles/default/portlets.xml
 msgid "Last entries"
 msgstr "Derniers billets"
 
 #: ./archive.py:68
-#: ./profiles/default/portlets.xml
 msgid "Monthly archive"
 msgstr "Archive mensuelle"
 

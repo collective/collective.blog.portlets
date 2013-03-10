@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
-"POT-Creation-Date: 2012-06-13 10:07+0000\n"
+"POT-Creation-Date: 2013-03-10 00:53+0000\n"
 "PO-Revision-Date: 2011-10-13 18.07+0200\n"
 "Last-Translator: zedr\n"
 "Language-Team: http://www.ipnext.it\n"
@@ -18,29 +18,27 @@ msgstr ""
 "Domain: collective.blog.portlets\n"
 "X-Is-Fallback-For: it-ch it-it\n"
 
-#: ./profiles/default/portlets.xml
-msgid "A blog style archive portlet"
-msgstr ""
-
-#: ./profiles/default/portlets.xml
-msgid "A blog style last entries portlet"
-msgstr ""
-
 #: ./archive.py:29
 msgid "Archive view"
 msgstr "Vista Archivio"
+
+#: Profile title in configure.zcml
+msgid "Collective Blog Portlets"
+msgstr ""
 
 #: ./last_entries.py:23
 msgid "Entries"
 msgstr "Post"
 
+#: Profile description in configure.zcml
+msgid "Extra portlets for the blogging"
+msgstr ""
+
 #: ./last_entries.py:46
-#: ./profiles/default/portlets.xml
 msgid "Last entries"
 msgstr ""
 
 #: ./archive.py:68
-#: ./profiles/default/portlets.xml
 msgid "Monthly archive"
 msgstr "Archivio mensile"
 
