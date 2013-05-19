@@ -4,6 +4,10 @@ Changelog
 1.4 (unreleased)
 ----------------
 
+- Updated Spanish translation [macagua]
+
+- Added improvements about i18n [macagua]
+
 - Don't require cmf.ManagePortal to add and edit portlets [erral]
 
 - Update translations files
@@ -18,6 +22,10 @@ Changelog
 - Merged erral-portlet-improvements branch: it adds an option
   to show the dates in reversed order and reuses Plone i18n machinery
   for month names [erral]
+
+- Added French translation. [sdemagny]
+
+- Added Portugese translaton [lccruz]
 
 This version has been tested with Plone 4.0.10, 4.1.6, 4.2.5,
 

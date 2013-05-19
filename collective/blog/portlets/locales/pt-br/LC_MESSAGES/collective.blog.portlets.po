@@ -1,26 +1,25 @@
-# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
-# SOME DESCRIPTIVE TITLE.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Rranslation of collective.blog.portlets to Brazilian Portuguese
+# Luciano Camargo Cruz <luciano@lccruz.net>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: collective.blog.portlets\n"
 "POT-Creation-Date: 2013-03-10 00:53+0000\n"
-"PO-Revision-Date: 2012-06-13 12:11+0100\n"
-"Last-Translator: Mikel Larreategi <mlarreategi@codesyntax.com>\n"
-"Language-Team: Basque <eu@li.org>\n"
+"PO-Revision-Date: 2012-08/24 17:20+0100\n"
+"Last-Translator: Luciano Camargo Cruz <luciano@lccruz.net>\n"
+"Language-Team: <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"Language-Code: eu\n"
-"Language-Name: Basque\n"
-"Preferred-Encodings: utf-8 latin1\n"
+"Language-Code: pt-br\n"
+"Language-Name: Português do Brasil\n"
+"Preferred-Encodings: latin1 utf-8\n"
 "Domain: collective.blog.portlets\n"
-"X-Poedit-Language: Basque\n"
+"X-Poedit-Language: Português do Brasil\n"
 
 #: ./archive.py:29
 msgid "Archive view"
-msgstr "Artxiboaren bista"
+msgstr "Visão do arquivo"
 
 #: Profile title in configure.zcml
 msgid "Collective Blog Portlets"
@@ -28,7 +27,7 @@ msgstr ""
 
 #: ./last_entries.py:23
 msgid "Entries"
-msgstr "Sarrerak"
+msgstr "Entradas"
 
 #: Profile description in configure.zcml
 msgid "Extra portlets for the blogging"
@@ -36,43 +35,43 @@ msgstr ""
 
 #: ./last_entries.py:46
 msgid "Last entries"
-msgstr "Azken sarrerak"
+msgstr "Últimas entradas"
 
 #: ./archive.py:68
 msgid "Monthly archive"
-msgstr "Hilabetekako artxiboa"
+msgstr "Arquivo mensal"
 
 #: ./archive.py:35
 msgid "Reverse year and month list"
-msgstr "Urte eta hilabeteak alderantzikatu"
+msgstr "Mostrar ano e mês em ordem inversa"
 
 #: ./archive.py:30
 msgid "The name of the archive view"
-msgstr "Artxiboaren bistaren izena"
+msgstr "O nome da visão do arquivo"
 
 #: ./last_entries.py:24
 msgid "The number of entries to show"
-msgstr "Erakutsiko den sarrera kopurua"
+msgstr "Número de entradas mostradas"
 
 #: ./archive.py:26
 msgid "The text that will be shown as the title of the portlet"
-msgstr "Portletaren izenburu gisa erabiliko den testua"
+msgstr "O texto que será mostrado como o título do portlet"
 
 #: ./archive.py:25
 msgid "Title of the portlet"
-msgstr "Izenburua"
+msgstr "Título do portlet"
 
 #: ./archive.py:36
 msgid "When checked, the first shown year will be the current one, and then the previous ones. The same applies to the months"
-msgstr "Aukeratuta dagoenean, lehenengo agertuko den urtea berriena izango da eta ondoren zaharragoak. Hilabeteak ere era berean ordenatuko dira."
+msgstr "Quando selecionado, o primeiro ano mostrado será o atual e depois os anteriores. O mesmo se aplica para os meses"
 
 #. Default: "Archive"
 #: ./archive.pt:9
 msgid "label_archive"
-msgstr "Artxiboa"
+msgstr "Arquivos"
 
 #. Default: "Last entries"
 #: ./last_entries.pt:6
 msgid "label_last_entries"
-msgstr "Azken sarrerak"
+msgstr "Últimas entradas"
 

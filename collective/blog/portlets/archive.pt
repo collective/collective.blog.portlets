@@ -6,9 +6,9 @@
         <tal:title condition="view/data/header"
                 tal:content="view/data/header">
         </tal:title>
-        <i18n:block 
+        <span 
             tal:condition="not:view/data/header"
-            translate="label_archive">Archive</i18n:block>
+            i18n:translate="label_archive">Archive</span>
         <span class="portletTopRight"></span>
     </dt>
 

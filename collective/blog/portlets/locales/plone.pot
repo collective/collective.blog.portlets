@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: collective.blog.portlets\n"
-"POT-Creation-Date: 2013-03-09 18:03+0000\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2012-06-13 10:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,12 +12,20 @@ msgstr ""
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: collective.blog.portlets\n"
+"Domain: DOMAIN\n"
 
-#: Profile title in configure.zcml
-msgid "Collective Blog Portlets"
+#: ./profiles/default/portlets.xml
+msgid "A blog style archive portlet"
 msgstr ""
 
-#: Profile description in configure.zcml
-msgid "Extra portlets for the blogging"
+#: ./profiles/default/portlets.xml
+msgid "A blog style last entries portlet"
+msgstr ""
+
+#: ./profiles/default/portlets.xml
+msgid "Last entries"
+msgstr ""
+
+#: ./profiles/default/portlets.xml
+msgid "Monthly archive"
 msgstr ""
