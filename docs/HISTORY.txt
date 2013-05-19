@@ -19,6 +19,8 @@ Changelog
   to show the dates in reversed order and reuses Plone i18n machinery
   for month names [erral]
 
+This version has been tested with Plone 4.0.10, 4.1.6, 4.2.5,
+
 
 1.3 (2012-04-17)
 ----------------
