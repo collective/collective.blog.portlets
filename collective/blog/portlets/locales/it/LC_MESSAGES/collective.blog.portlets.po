@@ -44,7 +44,7 @@ msgstr "Archivio mensile"
 
 #: ./archive.py:35
 msgid "Reverse year and month list"
-msgstr ""
+msgstr "Inverti l'ordine di anni e mesi"
 
 #: ./archive.py:30
 msgid "The name of the archive view"
@@ -56,15 +56,15 @@ msgstr "Il numero di post da mostrare"
 
 #: ./archive.py:26
 msgid "The text that will be shown as the title of the portlet"
-msgstr ""
+msgstr "Il testo che verrà utilizzato come titolo della portlet"
 
 #: ./archive.py:25
 msgid "Title of the portlet"
-msgstr ""
+msgstr "Titolo della portlet"
 
 #: ./archive.py:36
 msgid "When checked, the first shown year will be the current one, and then the previous ones. The same applies to the months"
-msgstr ""
+msgstr "Quando è settato, il primo anno visualizzato sarà il corrente e poi gli altri. Lo stesso per i mesi"
 
 #. Default: "Archive"
 #: ./archive.pt:9
