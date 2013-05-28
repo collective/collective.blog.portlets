@@ -1,5 +1,5 @@
-from zope.component import getUtility, getMultiAdapter, ComponentLookupError
 from plone.portlets.interfaces import IPortletAssignmentMapping, IPortletManager
+from zope.component import getUtility, getMultiAdapter, ComponentLookupError
 
 def find_assignment_context(assignment, context):
     # Finds the creation context of the assignment

@@ -1,14 +1,14 @@
-import unittest
-from datetime import datetime
-
-from Products.Five import zcml
-from Products.Five import fiveconfigure
+rom Products.Five import fiveconfigure
 from Products.Five import testbrowser
+from Products.Five import zcml
 from Products.PloneTestCase import PloneTestCase as ptc
 from Products.PloneTestCase.layer import PloneSite
-ptc.setupPloneSite(extension_profiles=['collective.blog.portlets:default'])
+from datetime import datetime
 
 import collective.blog.portlets
+import unittest
+
+ptc.setupPloneSite(extension_profiles=['collective.blog.portlets:default'])
 
 class TestCase(ptc.PloneTestCase):
     class layer(PloneSite):

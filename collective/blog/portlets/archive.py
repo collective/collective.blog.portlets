@@ -1,17 +1,13 @@
-from zope.interface import implements
-
-from plone.portlets.interfaces import IPortletDataProvider
-from plone.app.portlets.portlets import base
 from Products.CMFCore.utils import getToolByName
-
 from Products.CMFPlone.i18nl10n import monthname_msgid
-
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from collective.blog.portlets import _
+from collective.blog.portlets.utils import find_assignment_context
+from plone.app.portlets.portlets import base
+from plone.portlets.interfaces import IPortletDataProvider
 from zope import schema
 from zope.formlib import form
-
-from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-from collective.blog.portlets.utils import find_assignment_context
-from collective.blog.portlets import _
+from zope.interface import implements
 
 
 class IArchivePortlet(IPortletDataProvider):
