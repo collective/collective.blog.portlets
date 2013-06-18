@@ -21,7 +21,7 @@ class IArchivePortlet(IPortletDataProvider):
     header = schema.TextLine(title=_(u'Title of the portlet'),
                              description=_(u'The text that will be shown as the title of the portlet'),
                              required=False)
-    
+
     archive_view = schema.TextLine(title=_(u"Archive view"),
                                    description=_(u"The name of the archive view"),
                                    default=u'blog_view',
@@ -32,8 +32,8 @@ class IArchivePortlet(IPortletDataProvider):
                            description=_("When checked, the first shown year will be the current one, and then the previous ones. The same applies to the months"),
                            default=False,
                            )
-     
-    
+
+
 
 class Assignment(base.Assignment):
     """Portlet assignment.
@@ -49,13 +49,13 @@ class Assignment(base.Assignment):
     reversed = False
 
     def __init__(self, header=u'Monthly archive',
-                       archive_view=u'blog_view', 
+                       archive_view=u'blog_view',
                        reversed=False):
 
         self.header = header
         self.archive_view = archive_view
         self.reversed = reversed
-        
+
     @property
     def title(self):
         """This property is used to give the title of the portlet in the
@@ -73,12 +73,14 @@ class Renderer(base.Renderer):
     """
 
     render = ViewPageTemplateFile('archive.pt')
-    
+
     def update(self):
         self._counts = {}
         catalog = getToolByName(self.context, 'portal_catalog')
         # Get the path of where the portlet is created. That's the blog.
         assignment_context = find_assignment_context(self.data, self.context)
+        if assignment_context is None:
+            assignment_context = self.context
         self.folder_path = '/'.join(assignment_context.getPhysicalPath())
         self.folder_url = assignment_context.absolute_url()
 
@@ -88,7 +90,7 @@ class Renderer(base.Renderer):
         portal_types = site_properties.getProperty('blog_types', None)
         if portal_types == None:
             portal_types = ('Document', 'News Item', 'File')
-        
+
         # Because of ExtendedPathIndex being braindead it's tricky (read:
         # impossible) to get all subobjects for all folder, without also
         # getting the folder. So we set depth to 1, which means we only get
@@ -97,7 +99,7 @@ class Renderer(base.Renderer):
                          portal_type=portal_types)
         if not brains:
             return
-        
+
         # Count the number of posts per month:
         allmonths = {}
         for brain in brains:
@@ -117,14 +119,14 @@ class Renderer(base.Renderer):
             # Add this month:
             months = self._counts[year]
             months[month] = allmonths[year, month]
-            
+
     def years(self):
         items = sorted(self._counts.keys())
         if self.data.reversed:
             return reversed(items)
 
         return items
-    
+
     def months(self, year):
         # sort as integers, return as strings
         _months = sorted([int(m) for m in self._counts[year].keys()])
@@ -136,10 +138,10 @@ class Renderer(base.Renderer):
 
     def monthname(self, month):
         return monthname_msgid(month)
-    
+
     def count(self, year, month):
         return self._counts[year][month]
-    
+
     def archive_url(self, year, month):
         return '%s/%s?year=%s&month=%s' % (self.folder_url,
                                            self.data.archive_view,
@@ -157,8 +159,8 @@ class AddForm(base.AddForm):
 
     def create(self, data):
         return Assignment(**data)
-    
-    
+
+
 class EditForm(base.EditForm):
     """Portlet edit form.
 
