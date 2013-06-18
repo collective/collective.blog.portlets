@@ -16,12 +16,12 @@ class ILastEntriesPortlet(IPortletDataProvider):
     data that is being rendered and the portlet assignment itself are the
     same.
     """
-    
+
     entries = schema.Int(title=_(u"Entries"),
                          description=_(u"The number of entries to show"),
                          default=5,
                          required=True)
-    
+
 
 class Assignment(base.Assignment):
     """Portlet assignment.
@@ -52,11 +52,13 @@ class Renderer(base.Renderer):
     """
 
     render = ViewPageTemplateFile('last_entries.pt')
-    
+
     def items(self):
         catalog = getToolByName(self.context, 'portal_catalog')
         # Get the path of where the portlet is created. That's the blog.
         assignment_context = find_assignment_context(self.data, self.context)
+        if assignment_context is None:
+            assignment_context = self.context
         folder_path = '/'.join(assignment_context.getPhysicalPath())
         # Because of ExtendedPathIndex being braindead it's tricky (read:
         # impossible) to get all subobjects for all folder, without also
@@ -73,7 +75,7 @@ class Renderer(base.Renderer):
                          portal_type=portal_types,
                          sort_on='effective', sort_order='reverse')
         return brains[:self.data.entries]
-        
+
     def item_url(self, item):
         portal_properties = getToolByName(self.context, 'portal_properties')
         site_properties = getattr(portal_properties, 'site_properties')
@@ -95,8 +97,8 @@ class AddForm(base.AddForm):
 
     def create(self, data):
         return Assignment(**data)
-    
-    
+
+
 class EditForm(base.EditForm):
     """Portlet edit form.
 
