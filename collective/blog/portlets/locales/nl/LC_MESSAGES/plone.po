@@ -1,0 +1,31 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: collective.blog.portlets\n"
+"POT-Creation-Date: 2012-06-13 10:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: Jean-Paul Ladage <j.ladage@zestsoftware.nl>\n"
+"Language-Team: Dutch <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: nl\n"
+"Language-Name: Dutch\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.blog.portlets\n"
+
+#: ./profiles/default/portlets.xml
+msgid "A blog style archive portlet"
+msgstr "Een archief portlet per maand gesorteerd."
+
+#: ./profiles/default/portlets.xml
+msgid "A blog style last entries portlet"
+msgstr "Een portlet die de laatst gepubliceerde berichten toont."
+
+#: ./profiles/default/portlets.xml
+msgid "Last entries"
+msgstr "Recente blog berichten"
+
+#: ./profiles/default/portlets.xml
+msgid "Monthly archive"
+msgstr "Blog archief"

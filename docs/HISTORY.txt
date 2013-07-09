@@ -4,7 +4,9 @@ Changelog
 1.5 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Fixed wrong use of aq_parent, which came around after install PloneHotFix20130618. [erral]
+
+- Added Dutch translations. [jladage]
 
 
 1.4 (2013-05-27)

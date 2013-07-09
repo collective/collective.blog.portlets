@@ -1,0 +1,74 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: collective.blog.portlets\n"
+"POT-Creation-Date: 2013-07-09 16:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: Jean-Paul Ladage <j.ladage@zestsoftware.nl>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: nl\n"
+"Language-Name: Dutch\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.blog.portlets\n"
+
+#: ./archive.py:25
+msgid "Archive view"
+msgstr "Archief weergave"
+
+#: Profile title in configure.zcml
+msgid "Collective Blog Portlets"
+msgstr ""
+
+#: ./last_entries.py:20
+msgid "Entries"
+msgstr "Berichten"
+
+#: Profile description in configure.zcml
+msgid "Extra portlets for the blogging"
+msgstr "Extra blog portlets"
+
+#: ./last_entries.py:43
+msgid "Last entries"
+msgstr "Meest recente berichten"
+
+#: ./archive.py:64
+msgid "Monthly archive"
+msgstr "Maandelijkse archief"
+
+#: ./archive.py:31
+msgid "Reverse year and month list"
+msgstr "Jaar en maand lijst omgekeerd tonen."
+
+#: ./archive.py:26
+msgid "The name of the archive view"
+msgstr "De naam van portlet"
+
+#: ./last_entries.py:21
+msgid "The number of entries to show"
+msgstr "Het aantal berichten dat getoond wordt"
+
+#: ./archive.py:22
+msgid "The text that will be shown as the title of the portlet"
+msgstr "De text die getoond wordt als titel van de portlet"
+
+#: ./archive.py:21
+msgid "Title of the portlet"
+msgstr "Titel van de portlet"
+
+#: ./archive.py:32
+msgid "When checked, the first shown year will be the current one, and then the previous ones. The same applies to the months"
+msgstr "Indien aangevinkt, wordt het huidige jaar eerst getoond en daarna de vorige jaren. Idem voor de maanden"
+
+#. Default: "Archive"
+#: ./archive.pt:9
+msgid "label_archive"
+msgstr "Archief"
+
+#. Default: "Last entries"
+#: ./last_entries.pt:6
+msgid "label_last_entries"
+msgstr "Laatste berichten"
+
