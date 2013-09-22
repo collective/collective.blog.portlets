@@ -13,7 +13,7 @@ def find_assignment_context(assignment, context):
             manager = getUtility(IPortletManager, manager_name, context=context)
             mapping = getMultiAdapter((context, manager), IPortletAssignmentMapping)
             if assignment_name in mapping:
-                if mapping[assignment_name] is aq_base(assignment):
+                if aq_base(mapping[assignment_name]) is aq_base(assignment):
                     return context
         except ComponentLookupError:
             pass
