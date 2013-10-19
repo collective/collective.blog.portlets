@@ -1,4 +1,4 @@
-rom Products.Five import fiveconfigure
+from Products.Five import fiveconfigure
 from Products.Five import testbrowser
 from Products.Five import zcml
 from Products.PloneTestCase import PloneTestCase as ptc
