@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: collective.blog.portlets\n"
-"POT-Creation-Date: 2013-03-10 00:53+0000\n"
+"POT-Creation-Date: 2014-04-18 16:13+0000\n"
 "PO-Revision-Date: 2013-03-09 19:55-0430\n"
 "Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
 "Language-Team: Leonardo J. Caballero G.\n"
@@ -21,7 +21,7 @@ msgstr ""
 "X-Poedit-Language: Spanish\n"
 "X-Is-Fallback-For: es-ar es-bo es-cl es-co es-cr es-do es-ec es-es es-sv es-gt es-hn es-mx es-ni es-pa es-py es-pe es-pr es-us es-uy es-ve\n"
 
-#: ./archive.py:29
+#: ./archive.py:25
 msgid "Archive view"
 msgstr "Vista del archivo"
 
@@ -29,7 +29,7 @@ msgstr "Vista del archivo"
 msgid "Collective Blog Portlets"
 msgstr "collective blog.star portlets - Portlets para Blog"
 
-#: ./last_entries.py:23
+#: ./last_entries.py:20
 msgid "Entries"
 msgstr "Entradas"
 
@@ -37,35 +37,43 @@ msgstr "Entradas"
 msgid "Extra portlets for the blogging"
 msgstr "Agrega portlets extra para blogging en Plone"
 
-#: ./last_entries.py:46
+#: ./last_entries.py:43
 msgid "Last entries"
 msgstr "Últimas entradas"
 
-#: ./archive.py:68
+#: ./archive.py:75
 msgid "Monthly archive"
 msgstr "Archivo mensual"
 
-#: ./archive.py:35
+#: ./archive.py:31
 msgid "Reverse year and month list"
 msgstr "Mostrar año y mes en orden inverso"
 
-#: ./archive.py:30
+#: ./archive.py:37
+msgid "Sub-folder depth"
+msgstr ""
+
+#: ./archive.py:26
 msgid "The name of the archive view"
 msgstr "Nombre de la vista del archivo"
 
-#: ./last_entries.py:24
+#: ./last_entries.py:21
 msgid "The number of entries to show"
 msgstr "Número de entradas a mostrar"
 
-#: ./archive.py:26
+#: ./archive.py:22
 msgid "The text that will be shown as the title of the portlet"
 msgstr "Introduzca el texto que se mostrará como título del portlet."
 
-#: ./archive.py:25
+#: ./archive.py:21
 msgid "Title of the portlet"
 msgstr "Título del portlet"
 
-#: ./archive.py:36
+#: ./archive.py:38
+msgid "To include blog posts in subfolders, set this to the depth of the subfolders. 0 means no subfolders"
+msgstr ""
+
+#: ./archive.py:32
 msgid "When checked, the first shown year will be the current one, and then the previous ones. The same applies to the months"
 msgstr "Cuando está seleccionado, el primer año será el actual y después saldrán los anteriores. Lo mismo sucede con los meses."
 

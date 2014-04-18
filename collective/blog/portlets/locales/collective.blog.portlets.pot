@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: collective.blog.portlets\n"
-"POT-Creation-Date: 2013-03-10 00:53+0000\n"
+"POT-Creation-Date: 2014-04-18 16:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.blog.portlets\n"
 
-#: ./archive.py:29
+#: ./archive.py:25
 msgid "Archive view"
 msgstr ""
 
@@ -22,7 +22,7 @@ msgstr ""
 msgid "Collective Blog Portlets"
 msgstr ""
 
-#: ./last_entries.py:23
+#: ./last_entries.py:20
 msgid "Entries"
 msgstr ""
 
@@ -30,35 +30,43 @@ msgstr ""
 msgid "Extra portlets for the blogging"
 msgstr ""
 
-#: ./last_entries.py:46
+#: ./last_entries.py:43
 msgid "Last entries"
 msgstr ""
 
-#: ./archive.py:68
+#: ./archive.py:75
 msgid "Monthly archive"
 msgstr ""
 
-#: ./archive.py:35
+#: ./archive.py:31
 msgid "Reverse year and month list"
 msgstr ""
 
-#: ./archive.py:30
-msgid "The name of the archive view"
-msgstr ""
-
-#: ./last_entries.py:24
-msgid "The number of entries to show"
+#: ./archive.py:37
+msgid "Sub-folder depth"
 msgstr ""
 
 #: ./archive.py:26
+msgid "The name of the archive view"
+msgstr ""
+
+#: ./last_entries.py:21
+msgid "The number of entries to show"
+msgstr ""
+
+#: ./archive.py:22
 msgid "The text that will be shown as the title of the portlet"
 msgstr ""
 
-#: ./archive.py:25
+#: ./archive.py:21
 msgid "Title of the portlet"
 msgstr ""
 
-#: ./archive.py:36
+#: ./archive.py:38
+msgid "To include blog posts in subfolders, set this to the depth of the subfolders. 0 means no subfolders"
+msgstr ""
+
+#: ./archive.py:32
 msgid "When checked, the first shown year will be the current one, and then the previous ones. The same applies to the months"
 msgstr ""
 

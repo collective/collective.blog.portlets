@@ -1,6 +1,6 @@
 # Translation of collective.blog.portlets to Italian
 # Rigel Di Scala - IPnext srl 2011
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"

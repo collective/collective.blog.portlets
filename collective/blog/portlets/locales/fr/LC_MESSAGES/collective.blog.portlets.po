@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: collective.blog.portlets\n"
-"POT-Creation-Date: 2013-03-10 00:53+0000\n"
+"POT-Creation-Date: 2014-04-18 16:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: Sabrina Demagny <sabrina.demagny@gmail.com>\n"
 "Language-Team: French <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.blog.portlets\n"
 
-#: ./archive.py:29
+#: ./archive.py:25
 msgid "Archive view"
 msgstr "Vue archive"
 
@@ -22,7 +22,7 @@ msgstr "Vue archive"
 msgid "Collective Blog Portlets"
 msgstr ""
 
-#: ./last_entries.py:23
+#: ./last_entries.py:20
 msgid "Entries"
 msgstr "Billets"
 
@@ -30,35 +30,43 @@ msgstr "Billets"
 msgid "Extra portlets for the blogging"
 msgstr ""
 
-#: ./last_entries.py:46
+#: ./last_entries.py:43
 msgid "Last entries"
 msgstr "Derniers billets"
 
-#: ./archive.py:68
+#: ./archive.py:75
 msgid "Monthly archive"
 msgstr "Archive mensuelle"
 
-#: ./archive.py:35
+#: ./archive.py:31
 msgid "Reverse year and month list"
 msgstr "Inverser l'ordre d'affichage année et mois"
 
-#: ./archive.py:30
+#: ./archive.py:37
+msgid "Sub-folder depth"
+msgstr ""
+
+#: ./archive.py:26
 msgid "The name of the archive view"
 msgstr "Le nom de la vue archive"
 
-#: ./last_entries.py:24
+#: ./last_entries.py:21
 msgid "The number of entries to show"
 msgstr "Le nombre de billets à afficher"
 
-#: ./archive.py:26
+#: ./archive.py:22
 msgid "The text that will be shown as the title of the portlet"
 msgstr "Le texte sera affiché comme le titre du portlet"
 
-#: ./archive.py:25
+#: ./archive.py:21
 msgid "Title of the portlet"
 msgstr "Titre du portlet"
 
-#: ./archive.py:36
+#: ./archive.py:38
+msgid "To include blog posts in subfolders, set this to the depth of the subfolders. 0 means no subfolders"
+msgstr ""
+
+#: ./archive.py:32
 msgid "When checked, the first shown year will be the current one, and then the previous ones. The same applies to the months"
 msgstr "Lorsqu'elle est sélectionnée, la première année affichée sera l'année en cours puis les années précédentes. Il en sera de même pour les mois."
 

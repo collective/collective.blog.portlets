@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: collective.blog.portlets\n"
-"POT-Creation-Date: 2013-07-09 16:58+0000\n"
+"POT-Creation-Date: 2014-04-18 16:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: Jean-Paul Ladage <j.ladage@zestsoftware.nl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,13 +34,17 @@ msgstr "Extra blog portlets"
 msgid "Last entries"
 msgstr "Meest recente berichten"
 
-#: ./archive.py:64
+#: ./archive.py:75
 msgid "Monthly archive"
 msgstr "Maandelijkse archief"
 
 #: ./archive.py:31
 msgid "Reverse year and month list"
 msgstr "Jaar en maand lijst omgekeerd tonen."
+
+#: ./archive.py:37
+msgid "Sub-folder depth"
+msgstr ""
 
 #: ./archive.py:26
 msgid "The name of the archive view"
@@ -57,6 +61,10 @@ msgstr "De text die getoond wordt als titel van de portlet"
 #: ./archive.py:21
 msgid "Title of the portlet"
 msgstr "Titel van de portlet"
+
+#: ./archive.py:38
+msgid "To include blog posts in subfolders, set this to the depth of the subfolders. 0 means no subfolders"
+msgstr ""
 
 #: ./archive.py:32
 msgid "When checked, the first shown year will be the current one, and then the previous ones. The same applies to the months"

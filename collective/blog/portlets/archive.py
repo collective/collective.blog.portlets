@@ -29,13 +29,13 @@ class IArchivePortlet(IPortletDataProvider):
 
 
     reversed = schema.Bool(title=_(u"Reverse year and month list"),
-                           description=_("When checked, the first shown year will be the current one, and then the previous ones. The same applies to the months"),
+                           description=_(u"When checked, the first shown year will be the current one, and then the previous ones. The same applies to the months"),
                            default=False,
                            )
 
 
-    depth = schema.Int(title=_(u"Sub folder depth"),
-                       description=_("To include blog posts in subfolders, set this to the depth of the subfolders. 0 means no subfolders"),
+    depth = schema.Int(title=_(u"Sub-folder depth"),
+                       description=_(u"To include blog posts in subfolders, set this to the depth of the subfolders. 0 means no subfolders"),
                        default=0,
                        min=0,
                        # Setting this to 1000000 or similar will slow down the site,
