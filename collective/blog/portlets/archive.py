@@ -60,7 +60,8 @@ class Assignment(base.Assignment):
 
     def __init__(self, header=u'Monthly archive',
                        archive_view=u'blog_view',
-                       reversed=False):
+                       reversed=False,
+                       depth=0):
 
         self.header = header
         self.archive_view = archive_view
