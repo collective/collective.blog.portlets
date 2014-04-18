@@ -1,13 +1,16 @@
 from setuptools import setup, find_packages
+from io import open
 import os
 
-version = '1.7.dev0'
+version = '1.6.dev0'
 
+description = open("README.txt", encoding='UTF-8').read().strip() + "\n\n" + \
+    open(os.path.join("docs", "HISTORY.txt"), encoding='UTF-8').read().strip(),
+                       
 setup(name='collective.blog.portlets',
       version=version,
       description="Archive view and portlet",
-      long_description=open("README.txt").read() + "\n" +
-                       open(os.path.join("docs", "HISTORY.txt")).read(),
+      long_description=
       # Get more strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
           "Framework :: Plone",
