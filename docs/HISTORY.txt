@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.6 (unreleased)
+1.6 (2014-04-18)
 ----------------
 
 - Added a depth setting for the Archive portlet, so you can have subfolders.
