@@ -4,7 +4,8 @@ Changelog
 1.6 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Added a depth setting for the Archive portlet, so you can have subfolders.
+ [regebro]
 
 
 1.5 (2013-10-19)

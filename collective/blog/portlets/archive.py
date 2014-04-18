@@ -34,6 +34,15 @@ class IArchivePortlet(IPortletDataProvider):
                            )
 
 
+    depth = schema.Int(title=_(u"Sub folder depth"),
+                       description=_("To include blog posts in subfolders, set this to the depth of the subfolders. 0 means no subfolders"),
+                       default=0,
+                       min=0,
+                       # Setting this to 1000000 or similar will slow down the site,
+                       # so let's prevent silly values.
+                       max=100, 
+                       )
+
 
 class Assignment(base.Assignment):
     """Portlet assignment.
@@ -47,6 +56,7 @@ class Assignment(base.Assignment):
     header = u'Monthly archive'
     archive_view = u'blog_view'
     reversed = False
+    depth = 0
 
     def __init__(self, header=u'Monthly archive',
                        archive_view=u'blog_view',
@@ -92,10 +102,9 @@ class Renderer(base.Renderer):
             portal_types = ('Document', 'News Item', 'File')
 
         # Because of ExtendedPathIndex being braindead it's tricky (read:
-        # impossible) to get all subobjects for all folder, without also
-        # getting the folder. So we set depth to 1, which means we only get
-        # the immediate children. This is not a bug, but a lack of feature.
-        brains = catalog(path={'query': self.folder_path, 'depth': 1},
+        # impossible) to get all subobjects for all folders, without also
+        # getting the folder. So we set a specific depth.
+        brains = catalog(path={'query': self.folder_path, 'depth': self.data.depth + 1},
                          portal_type=portal_types)
         if not brains:
             return
