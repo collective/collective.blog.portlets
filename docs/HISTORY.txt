@@ -5,7 +5,7 @@ Changelog
 ----------------
 
 - Added a depth setting for the Archive portlet, so you can have subfolders.
- [regebro]
+  [regebro]
 
 
 1.5 (2013-10-19)
