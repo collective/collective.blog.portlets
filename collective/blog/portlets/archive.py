@@ -6,8 +6,6 @@ from collective.blog.portlets.utils import find_assignment_context
 from plone.app.portlets.portlets import base
 from plone.portlets.interfaces import IPortletDataProvider
 from zope import schema
-from z3c.form import field
-from plone.app.portlets.portlets import base
 from zope.interface import implements
 
 
