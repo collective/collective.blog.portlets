@@ -5,7 +5,6 @@ from collective.blog.portlets.utils import find_assignment_context
 from plone.app.portlets.portlets import base
 from plone.portlets.interfaces import IPortletDataProvider
 from zope import schema
-from zope.formlib import form
 from zope.interface import implements
 
 
@@ -90,10 +89,14 @@ class AddForm(base.AddForm):
     """Portlet add form.
 
     This is registered in configure.zcml. The form_fields variable tells
-    zope.formlib which fields to display. The create() method actually
+    z3c.form which fields to display. The create() method actually
     constructs the assignment that is being added.
     """
-    form_fields = form.Fields(ILastEntriesPortlet)
+    schema = ILastEntriesPortlet
+    label = _(u'heading_add_last_entries_portlet',
+              default=u'Add last entries portlet')
+    description = _(u'help_add_last_entries_portlet',
+                    default=u'A last entries portlet shows the last X posts')
 
     def create(self, data):
         return Assignment(**data)
@@ -103,6 +106,6 @@ class EditForm(base.EditForm):
     """Portlet edit form.
 
     This is registered with configure.zcml. The form_fields variable tells
-    zope.formlib which fields to display.
+    z3c.form which fields to display.
     """
-    form_fields = form.Fields(ILastEntriesPortlet)
+    schema = ILastEntriesPortlet
