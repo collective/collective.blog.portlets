@@ -2,6 +2,7 @@ from Products.CMFCore.utils import getToolByName
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from collective.blog.portlets import _
 from collective.blog.portlets.utils import find_assignment_context
+from plone import api
 from plone.app.portlets.portlets import base
 from plone.portlets.interfaces import IPortletDataProvider
 from zope import schema
@@ -76,9 +77,7 @@ class Renderer(base.Renderer):
         return brains[:self.data.entries]
 
     def item_url(self, item):
-        portal_properties = getToolByName(self.context, 'portal_properties')
-        site_properties = getattr(portal_properties, 'site_properties')
-        use_view = site_properties.getProperty('typesUseViewActionInListings')
+        use_view = api.portal.get_registry_record('plone.types_use_view_action_in_listings')
         url = item.getURL()
         if item.portal_type in use_view:
             return '%s/view' % url
