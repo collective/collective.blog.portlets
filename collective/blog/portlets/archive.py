@@ -5,9 +5,13 @@ from collective.blog.portlets import _
 from collective.blog.portlets.utils import find_assignment_context
 from plone.app.portlets.portlets import base
 from plone.portlets.interfaces import IPortletDataProvider
+from z3c.form.field import Fields
+
 from zope import schema
-from zope.formlib import form
-from zope.interface import implements
+
+from plone.app.portlets.portlets import base
+from plone.app.portlets.browser import formhelper
+from zope.interface import implementer
 
 
 class IArchivePortlet(IPortletDataProvider):
@@ -40,10 +44,11 @@ class IArchivePortlet(IPortletDataProvider):
                        min=0,
                        # Setting this to 1000000 or similar will slow down the site,
                        # so let's prevent silly values.
-                       max=100, 
+                       max=100,
                        )
 
 
+@implementer(IArchivePortlet)
 class Assignment(base.Assignment):
     """Portlet assignment.
 
@@ -51,7 +56,6 @@ class Assignment(base.Assignment):
     with columns.
     """
 
-    implements(IArchivePortlet)
 
     header = u'Monthly archive'
     archive_view = u'blog_view'
@@ -165,7 +169,7 @@ class AddForm(base.AddForm):
     zope.formlib which fields to display. The create() method actually
     constructs the assignment that is being added.
     """
-    form_fields = form.Fields(IArchivePortlet)
+    form_fields = Fields(IArchivePortlet)
 
     def create(self, data):
         return Assignment(**data)
@@ -177,4 +181,4 @@ class EditForm(base.EditForm):
     This is registered with configure.zcml. The form_fields variable tells
     zope.formlib which fields to display.
     """
-    form_fields = form.Fields(IArchivePortlet)
+    form_fields = Fields(IArchivePortlet)

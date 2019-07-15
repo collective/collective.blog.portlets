@@ -5,9 +5,14 @@ from collective.blog.portlets.utils import find_assignment_context
 from plone.app.portlets.portlets import base
 from plone.portlets.interfaces import IPortletDataProvider
 from zope import schema
-from zope.formlib import form
-from zope.interface import implements
 
+from z3c.form.field import Fields
+
+from zope import schema
+
+from plone.app.portlets.portlets import base
+from plone.app.portlets.browser import formhelper
+from zope.interface import implementer
 
 class ILastEntriesPortlet(IPortletDataProvider):
     """A portlet
@@ -23,6 +28,7 @@ class ILastEntriesPortlet(IPortletDataProvider):
                          required=True)
 
 
+@implementer(ILastEntriesPortlet)
 class Assignment(base.Assignment):
     """Portlet assignment.
 
@@ -30,7 +36,6 @@ class Assignment(base.Assignment):
     with columns.
     """
 
-    implements(ILastEntriesPortlet)
 
     def __init__(self, entries=5):
         self.entries = entries
@@ -86,23 +91,23 @@ class Renderer(base.Renderer):
         return url
 
 
-class AddForm(base.AddForm):
+class AddForm(formhelper.AddForm):
     """Portlet add form.
 
     This is registered in configure.zcml. The form_fields variable tells
     zope.formlib which fields to display. The create() method actually
     constructs the assignment that is being added.
     """
-    form_fields = form.Fields(ILastEntriesPortlet)
+    form_fields = Fields(ILastEntriesPortlet)
 
     def create(self, data):
         return Assignment(**data)
 
 
-class EditForm(base.EditForm):
+class EditForm(formhelper.EditForm):
     """Portlet edit form.
 
     This is registered with configure.zcml. The form_fields variable tells
     zope.formlib which fields to display.
     """
-    form_fields = form.Fields(ILastEntriesPortlet)
+    form_fields = Fields(ILastEntriesPortlet)
