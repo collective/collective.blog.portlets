@@ -92,6 +92,7 @@ class Renderer(base.Renderer):
     def update(self):
         self._counts = {}
         catalog = getToolByName(self.context, 'portal_catalog')
+
         # Get the path of where the portlet is created. That's the blog.
         assignment_context = find_assignment_context(self.data, self.context)
         if assignment_context is None:

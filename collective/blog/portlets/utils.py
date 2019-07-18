@@ -5,8 +5,9 @@ from zope.component import getUtility, getMultiAdapter, ComponentLookupError
 
 def find_assignment_context(assignment, context):
     # Finds the creation context of the assignment
+
     context = aq_inner(context)
-    manager_name = assignment.manager.__name__
+    manager_name = assignment.__parent__.__manager__
     assignment_name = assignment.__name__
     while True:
         try:

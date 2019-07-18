@@ -59,6 +59,7 @@ class Renderer(base.Renderer):
     render = ViewPageTemplateFile('last_entries.pt')
 
     def items(self):
+
         catalog = getToolByName(self.context, 'portal_catalog')
         # Get the path of where the portlet is created. That's the blog.
         assignment_context = find_assignment_context(self.data, self.context)
@@ -82,13 +83,7 @@ class Renderer(base.Renderer):
         return brains[:self.data.entries]
 
     def item_url(self, item):
-        portal_properties = getToolByName(self.context, 'portal_properties')
-        site_properties = getattr(portal_properties, 'site_properties')
-        use_view = site_properties.getProperty('typesUseViewActionInListings')
-        url = item.getURL()
-        if item.portal_type in use_view:
-            return '%s/view' % url
-        return url
+        return item.getURL()
 
 
 class AddForm(formhelper.AddForm):
