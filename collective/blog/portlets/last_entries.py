@@ -98,6 +98,8 @@ class AddForm(formhelper.AddForm):
     zope.formlib which fields to display. The create() method actually
     constructs the assignment that is being added.
     """
+
+    schema = ILastEntriesPortlet
     form_fields = Fields(ILastEntriesPortlet)
 
     def create(self, data):
@@ -110,4 +112,6 @@ class EditForm(formhelper.EditForm):
     This is registered with configure.zcml. The form_fields variable tells
     zope.formlib which fields to display.
     """
+
+    schema = ILastEntriesPortlet
     form_fields = Fields(ILastEntriesPortlet)

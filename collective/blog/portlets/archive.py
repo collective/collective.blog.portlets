@@ -169,6 +169,8 @@ class AddForm(base.AddForm):
     zope.formlib which fields to display. The create() method actually
     constructs the assignment that is being added.
     """
+
+    schema = IArchivePortlet
     form_fields = Fields(IArchivePortlet)
 
     def create(self, data):
@@ -181,4 +183,6 @@ class EditForm(base.EditForm):
     This is registered with configure.zcml. The form_fields variable tells
     zope.formlib which fields to display.
     """
+
+    schema = IArchivePortlet
     form_fields = Fields(IArchivePortlet)
